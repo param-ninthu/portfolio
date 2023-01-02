@@ -1,10 +1,13 @@
 import React from "react";
 import {
   BodyContainer,
+  ContactButton,
+  List,
   Logo,
   NavButtonContainer,
   NavContainer,
   NavLinkContainer,
+  UoList,
 } from "./homePageElements";
 
 const Home = () => {
@@ -13,8 +16,17 @@ const Home = () => {
       <BodyContainer>
         <NavContainer>
           <Logo>choosen</Logo>
-          <NavLinkContainer>Navlinks</NavLinkContainer>
-          <NavButtonContainer>Button</NavButtonContainer>
+          <NavLinkContainer>
+            <UoList>
+              <List>Home</List>
+              <List>Works</List>
+              <List>Services</List>
+              <List>About me</List>
+            </UoList>
+          </NavLinkContainer>
+          <NavButtonContainer>
+            <ContactButton>Button</ContactButton>
+          </NavButtonContainer>
         </NavContainer>
       </BodyContainer>
     </>
