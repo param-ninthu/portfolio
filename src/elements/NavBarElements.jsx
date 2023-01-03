@@ -1,23 +1,5 @@
 import styled from "styled-components";
 
-export const BodyContainer = styled.div`
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  background-color: #d9e1e6;
-  width: 100%;
-  overflow: hidden;
-`;
-
-export const NavContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: 5px;
-`;
-
 export const Logo = styled.div`
   font-weight: 900;
   font-size: 2rem;
@@ -37,7 +19,7 @@ export const NavButtonContainer = styled.div`
 `;
 
 export const ContactButton = styled.div`
-  height: 50px;
+  height: 40px;
   width: 100px;
   display: flex;
   flex-direction: column;
@@ -45,6 +27,33 @@ export const ContactButton = styled.div`
   align-items: center;
   border: 1px solid #000;
   border-radius: 5px;
+  animation: wiggle 2s linear infinite;
+
+  @keyframes wiggle {
+    0%,
+    7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+      transform: rotateZ(0);
+    }
+  }
 `;
 
 export const UoList = styled.ul`
@@ -61,4 +70,15 @@ export const UoList = styled.ul`
 
 export const List = styled.li`
   text-decoration: none;
+  cursor: pointer;
+
+  :hover {
+    border-bottom: 1px solid #000;
+    border-width: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: all ease-in-out 250ms;
+    font-weight: 600;
+    color: #000;
+  }
 `;

@@ -1,34 +1,23 @@
 import React from "react";
+import Body from "../../components/Body";
+import NavBar from "../../components/NavBar";
 import {
-  BodyContainer,
-  ContactButton,
-  List,
-  Logo,
-  NavButtonContainer,
+  MainContainer,
   NavContainer,
-  NavLinkContainer,
-  UoList,
-} from "./homePageElements";
+  BodyContainer,
+} from "../../elements/HomePageElements";
 
 const Home = () => {
   return (
     <>
-      <BodyContainer>
+      <MainContainer>
         <NavContainer>
-          <Logo>choosen</Logo>
-          <NavLinkContainer>
-            <UoList>
-              <List>Home</List>
-              <List>Works</List>
-              <List>Services</List>
-              <List>About me</List>
-            </UoList>
-          </NavLinkContainer>
-          <NavButtonContainer>
-            <ContactButton>Button</ContactButton>
-          </NavButtonContainer>
+          <NavBar />
         </NavContainer>
-      </BodyContainer>
+        <BodyContainer>
+          <Body />
+        </BodyContainer>
+      </MainContainer>
     </>
   );
 };
