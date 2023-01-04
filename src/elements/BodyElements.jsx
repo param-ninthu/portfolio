@@ -22,3 +22,32 @@ export const Image3 = styled.img`
   left: 5%;
   top: 10%;
 `;
+
+export const InnerContainer = styled.div`
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+`;
+
+export const ContentCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+`;
+
+export const ProfileCard = styled.div`
+  display: flex;
+
+  border: 1px solid #000;
+`;
+
+export const ProjectsCard = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #000;
+`;
