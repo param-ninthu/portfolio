@@ -12,7 +12,12 @@ import {
   ProfileCard,
   ProjectsCard,
   Title,
+  Card,
+  Heading,
+  SubCard,
 } from "../elements/BodyElements";
+
+import { motion, useMotionValue, AnimatePresence } from "framer-motion";
 
 import AppleWatch from "./../assets/images/AppleWatch.png";
 import Macbook from "./../assets/images/Macbook.png";
@@ -48,7 +53,23 @@ const Body = () => {
           </IconsCard>
         </ContentCard>
         <ProfileCard>Hello</ProfileCard>
-        <ProjectsCard>Vanakkam</ProjectsCard>
+        <ProjectsCard>
+          <Card>
+            <SubCard>
+              <Heading>Hi</Heading>
+            </SubCard>
+          </Card>
+          <Card>
+            <SubCard>
+              <Heading>Hi</Heading>
+            </SubCard>
+          </Card>
+          <Card>
+            <SubCard>
+              <Heading>Hi</Heading>
+            </SubCard>
+          </Card>
+        </ProjectsCard>
       </InnerContainer>
     </>
   );

@@ -28,16 +28,16 @@ export const Image3 = styled.img`
 
 export const InnerContainer = styled.div`
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 20% 40% 40%;
   height: 100%;
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
 `;
 
 export const ContentCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 
 export const ProfileCard = styled.div`
@@ -45,8 +45,9 @@ export const ProfileCard = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  width: 100%;
 `;
 
 export const ContentCardContainer = styled.div`
@@ -70,7 +71,8 @@ export const IconsCard = styled.div`
   flex-direction: row;
   width: 40%;
   height: auto;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 50px;
   align-items: center;
 `;
 
@@ -78,4 +80,24 @@ export const Icons = styled.img`
   display: flex;
   width: 32px !important;
   height: 32px !important;
+`;
+
+export const Card = styled.div`
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+`;
+
+export const SubCard = styled.div`
+  height: 80%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #b9c5cd;
+`;
+
+export const Heading = styled.h2`
+  font-size: 20px;
+  background-color: #b9c5cd;
+  border-radius: 5px;
 `;
