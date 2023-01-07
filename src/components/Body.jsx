@@ -28,6 +28,33 @@ import github from "./../assets/Icons/github.png";
 import gmail from "./../assets/Icons/gmail.png";
 import linkedin from "./../assets/Icons/linkedin.png";
 
+function Item() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen(!isOpen);
+
+  return (
+    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 5 }}>
+      <motion.div className="avatar" layout />
+      <AnimatePresence>{isOpen && <MContent />}</AnimatePresence>
+    </motion.li>
+  );
+}
+
+function MContent() {
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="row">Romba sangadama irukku makkale</div>
+    </motion.div>
+  );
+}
+
+const items = [0, 1, 2];
 const Body = () => {
   return (
     <>
@@ -55,8 +82,14 @@ const Body = () => {
           </IconsCard>
         </ContentCard>
         <ProfileCard>Hello</ProfileCard>
-        <ProjectsCard>
-          <motion.div></motion.div>
+        <ProjectsCard className="fmotion">
+          <AnimateSharedLayout>
+            <motion.ul layout initial={{ borderRadius: 5, size: 600 }}>
+              {items.map((item) => (
+                <Item key={item} />
+              ))}
+            </motion.ul>
+          </AnimateSharedLayout>
         </ProjectsCard>
       </InnerContainer>
     </>

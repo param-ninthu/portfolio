@@ -49,9 +49,10 @@ export const ProfileCard = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-  display: grid;
-  grid-template-rows: 33.33% 33.33% 33.33%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContentCardContainer = styled.div`
