@@ -28,7 +28,7 @@ export const Image3 = styled.img`
 
 export const InnerContainer = styled.div`
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20% 50% 30%;
   height: 100%;
   width: 90%;
   margin-top: 20px;
@@ -42,6 +42,10 @@ export const ContentCard = styled.div`
 
 export const ProfileCard = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
 `;
 
 export const ProjectsCard = styled.div`

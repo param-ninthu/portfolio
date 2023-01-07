@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Content,
   ContentCard,
@@ -17,7 +17,9 @@ import {
   SubCard,
 } from "../elements/BodyElements";
 
-import { motion, useMotionValue, AnimatePresence } from "framer-motion";
+import "./../elements/body.css";
+
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 import AppleWatch from "./../assets/images/AppleWatch.png";
 import Macbook from "./../assets/images/Macbook.png";
@@ -54,21 +56,7 @@ const Body = () => {
         </ContentCard>
         <ProfileCard>Hello</ProfileCard>
         <ProjectsCard>
-          <Card>
-            <SubCard>
-              <Heading>Hi</Heading>
-            </SubCard>
-          </Card>
-          <Card>
-            <SubCard>
-              <Heading>Hi</Heading>
-            </SubCard>
-          </Card>
-          <Card>
-            <SubCard>
-              <Heading>Hi</Heading>
-            </SubCard>
-          </Card>
+          <motion.div></motion.div>
         </ProjectsCard>
       </InnerContainer>
     </>
