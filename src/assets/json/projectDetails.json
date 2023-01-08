@@ -1,0 +1,28 @@
+[{
+    "ProjectTitle": "knot - Online Wedding Planner",
+    "Description": "Provides an integrated platform for the clients and service providers to get engaged.",
+    "GithubLink": "https://github.com/Knot-17",
+    "FrontEnd":"React JS",
+    "BackEndEngine" : "Node JS" ,
+    "BackEnd" :"Express JS",
+    "Database" : "PostgreSQL"
+    },
+{
+    "ProjectTitle": "Agrofy ",
+    "Description": "Providing interfaces to the Business organizations like supermarkets and restaurants to buy the excess yield from farmers.",
+    "GithubLink": "https://github.com/param-ninthu/Agrofy",
+    "FrontEnd":"HTML",
+    "BackEndEngine" :"CSS",
+    "BackEnd" :"PHP",
+    "Database" : "MySQL"
+    },
+{
+    "ProjectTitle": "Basic Weather Application",
+    "Description": "Integrating Google cloud API , MapBox API , Open Weathermap API in order to build this system.",
+    "GithubLink": "https://github.com/param-ninthu/OurGroupProject" ,
+    "FrontEnd":"HTML",
+    "BackEnd" : "Python" ,
+    "BackEndEngine":"Django",
+    "Database" : "PostgreSQL"
+    }
+]   

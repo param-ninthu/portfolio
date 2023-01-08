@@ -12,14 +12,13 @@ import {
   ProfileCard,
   ProjectsCard,
   Title,
-  Card,
-  Heading,
-  SubCard,
+  Tlist,
 } from "../elements/BodyElements";
 
 import "./../elements/body.css";
 
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import projectDetails from "./../assets/json/projectDetails.json";
 
 import AppleWatch from "./../assets/images/AppleWatch.png";
 import Macbook from "./../assets/images/Macbook.png";
@@ -28,7 +27,7 @@ import github from "./../assets/Icons/github.png";
 import gmail from "./../assets/Icons/gmail.png";
 import linkedin from "./../assets/Icons/linkedin.png";
 
-function Item() {
+const Item = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
@@ -36,12 +35,38 @@ function Item() {
   return (
     <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 5 }}>
       <motion.div className="avatar" layout />
-      <AnimatePresence>{isOpen && <MContent />}</AnimatePresence>
+      {!isOpen && (
+        <motion.div className="title" layout>
+          {" "}
+          {props.data.ProjectTitle}{" "}
+        </motion.div>
+      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            layout
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <div className="row"> {props.data.ProjectTitle}</div>
+            <div className="row"> {props.data.Description}</div>
+            <div className="row"> {props.data.GithubLink}</div>
+            <div className="row">
+              {" "}
+              <Tlist $mode="frontEnd">{props.data.FrontEnd}</Tlist>
+              <Tlist $mode="backEndEngine">{props.data.BackEndEngine}</Tlist>
+              <Tlist $mode="backEnd">{props.data.BackEnd}</Tlist>
+              <Tlist $mode="database">{props.data.Database}</Tlist>{" "}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.li>
   );
-}
+};
 
-function MContent() {
+const MContent = (props) => {
   return (
     <motion.div
       layout
@@ -49,12 +74,11 @@ function MContent() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="row">Romba sangadama irukku makkale</div>
+      <div className="row"> props.ProjectTitle</div>
     </motion.div>
   );
-}
+};
 
-const items = [0, 1, 2];
 const Body = () => {
   return (
     <>
@@ -84,9 +108,9 @@ const Body = () => {
         <ProfileCard>Hello</ProfileCard>
         <ProjectsCard className="fmotion">
           <AnimateSharedLayout>
-            <motion.ul layout initial={{ borderRadius: 5, size: 600 }}>
-              {items.map((item) => (
-                <Item key={item} />
+            <motion.ul layout initial={{ borderRadius: 5 }}>
+              {projectDetails.map((details) => (
+                <Item data={details} />
               ))}
             </motion.ul>
           </AnimateSharedLayout>
