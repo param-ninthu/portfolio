@@ -32,6 +32,8 @@ export const InnerContainer = styled.div`
   height: 100%;
   width: 90%;
   margin-top: 20px;
+  gap: 20px;
+  margin-right: 40px;
 `;
 
 export const ContentCard = styled.div`
@@ -51,9 +53,9 @@ export const ProfileCard = styled.div`
 export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding-left: 40px;
+  position: relative;
 `;
 
 export const ContentCardContainer = styled.div`
@@ -134,4 +136,14 @@ export const Tlist = styled.div`
         `;
     }
   }}
+`;
+
+export const SubTitle = styled.div`
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 `;

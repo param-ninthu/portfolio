@@ -25,6 +25,15 @@
     "BackEndEngine" : "Node JS" ,
     "Database" : "Firebase"
     },
+    {
+    "ProjectTitle": "Ex-Air Dashboard",
+    "Description": "Dashboard to provide realtime readings of an Ex-Air model which is an external air purifier.",
+    "GithubLink": "https://github.com/param-ninthu/hackx.git" ,
+    "FrontEnd":"React JS",
+    "BackEnd" : "Node JS" ,
+    "BackEndEngine":"Bootstrap",
+    "Database" : "Firebase"
+    },
 {
     "ProjectTitle": "Basic Weather Application",
     "Description": "Integrating Google cloud API , MapBox API , Open Weathermap API in order to build this system.",

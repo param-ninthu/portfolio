@@ -13,6 +13,7 @@ import {
   ProjectsCard,
   Title,
   Tlist,
+  SubTitle,
 } from "../elements/BodyElements";
 
 import "./../elements/body.css";
@@ -106,6 +107,7 @@ const Body = () => {
         </ContentCard>
         <ProfileCard>Hello</ProfileCard>
         <ProjectsCard className="fmotion">
+          <SubTitle>Hands on Projects</SubTitle>
           <AnimateSharedLayout>
             <motion.ul layout initial={{ borderRadius: 5 }}>
               {projectDetails.map((details) => (
