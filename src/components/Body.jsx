@@ -34,7 +34,6 @@ const Item = (props) => {
 
   return (
     <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 5 }}>
-      <motion.div className="avatar" layout />
       {!isOpen && (
         <motion.div className="title" layout>
           {" "}
@@ -47,7 +46,7 @@ const Item = (props) => {
             layout
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 0, scale: 0, tabSize: 4 }}
           >
             <div className="row"> {props.data.ProjectTitle}</div>
             <div className="row"> {props.data.Description}</div>
