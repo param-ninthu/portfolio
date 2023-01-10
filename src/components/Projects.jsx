@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import projectDetails from "./../assets/json/projectDetails.json";
-import { Tlist } from "../elements/ProjectElements";
+import {
+  InnerContainer,
+  ProjectsCard,
+  Tlist,
+} from "../elements/ProjectElements";
 
 import "./../elements/body.css";
 
@@ -11,7 +15,12 @@ const Item = (props) => {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 5 }}>
+    <motion.div
+      className="project_item"
+      layout
+      onClick={toggleOpen}
+      initial={{ borderRadius: 5 }}
+    >
       {!isOpen && (
         <motion.div className="title" layout>
           {" "}
@@ -39,7 +48,7 @@ const Item = (props) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.li>
+    </motion.div>
   );
 };
 
@@ -59,13 +68,21 @@ const MContent = (props) => {
 const Projects = () => {
   return (
     <>
-      <AnimateSharedLayout>
-        <motion.ul layout initial={{ borderRadius: 5 }}>
-          {projectDetails.map((details) => (
-            <Item data={details} />
-          ))}
-        </motion.ul>
-      </AnimateSharedLayout>
+      <InnerContainer>
+        <ProjectsCard className="fmotion">
+          <AnimateSharedLayout>
+            <motion.div
+              className="project_card"
+              layout
+              initial={{ borderRadius: 5 }}
+            >
+              {projectDetails.map((details) => (
+                <Item data={details} />
+              ))}
+            </motion.div>
+          </AnimateSharedLayout>
+        </ProjectsCard>
+      </InnerContainer>
     </>
   );
 };

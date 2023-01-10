@@ -3,6 +3,10 @@ import styled, { css } from "styled-components";
 export const InnerContainer = styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  height: 800px;
 `;
 
 export const Tlist = styled.div`
@@ -39,4 +43,6 @@ export const ProjectsCard = styled.div`
   justify-content: left;
   align-items: center;
   position: relative;
+  width: 100%;
+  padding: 20px;
 `;

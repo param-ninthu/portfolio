@@ -34,6 +34,7 @@ export const InnerContainer = styled.div`
   margin-top: 20px;
   gap: 20px;
   margin-right: 40px;
+  margin-bottom: 40px;
 `;
 
 export const ContentCard = styled.div`

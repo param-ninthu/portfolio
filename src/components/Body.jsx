@@ -10,10 +10,10 @@ import {
   Image3,
   InnerContainer,
   ProfileCard,
-  ProjectsCard,
   Title,
   Tlist,
   SubTitle,
+  TechCard,
 } from "../elements/BodyElements";
 
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
@@ -52,7 +52,7 @@ const Body = () => {
           </IconsCard>
         </ContentCard>
         <ProfileCard>Hello</ProfileCard>
-        <ProjectsCard className="fmotion"></ProjectsCard>
+        <TechCard className="fmotion"></TechCard>
       </InnerContainer>
     </>
   );
