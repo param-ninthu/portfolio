@@ -24,6 +24,15 @@ export const NavContainer = styled.div`
 export const BodyContainer = styled.div`
   display: flex;
   width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const ProjectConatiner = styled.div`
+  display: flex;
+  width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;

@@ -50,7 +50,7 @@ export const ProfileCard = styled.div`
   border: 1px solid #000;
 `;
 
-export const ProjectsCard = styled.div`
+export const TechCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -110,6 +110,16 @@ export const Heading = styled.h2`
   border-radius: 5px;
 `;
 
+export const SubTitle = styled.div`
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+`;
+
 export const Tlist = styled.div`
   padding: 3px;
   border-radius: 5px;
@@ -136,14 +146,4 @@ export const Tlist = styled.div`
         `;
     }
   }}
-`;
-
-export const SubTitle = styled.div`
-  font-size: 20px;
-  font-weight: 700;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
 `;
