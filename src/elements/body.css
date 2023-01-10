@@ -18,7 +18,7 @@ background-color: transparent;
 }
 
 .fmotion .project_item {
-  background-color: rgb(85, 85, 85);
+  background-color:#DADADA;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -49,10 +49,14 @@ background-color: transparent;
   flex-direction: row;
   gap: 5px;
   padding: 5px;
+  color:#fff;
 }
 
 .title{
   margin-top: 5px;
   background-color: transparent;
+  color:#fff;
+font-weight: 700;
+font-size: 20px;
 }
 

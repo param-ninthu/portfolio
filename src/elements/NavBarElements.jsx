@@ -11,7 +11,7 @@ export const NavLinkContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 30%;
 `;
 
 export const NavButtonContainer = styled.div`
@@ -71,6 +71,7 @@ export const UoList = styled.ul`
 export const List = styled.li`
   text-decoration: none;
   cursor: pointer;
+  height: fit-content;
 
   :hover {
     border-bottom: 1px solid #000;
