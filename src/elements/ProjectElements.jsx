@@ -2,10 +2,10 @@ import styled, { css } from "styled-components";
 
 export const InnerContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: center;
   height: 800px;
 `;
 
@@ -38,11 +38,20 @@ export const Tlist = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Project = styled.div`
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+  margin-bottom: 15px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  padding: 20px;
 `;
+
+export const Image = styled.img``;

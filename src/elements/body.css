@@ -1,3 +1,12 @@
+.fmotion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+
+
 .fmotion .project_card, li {
   font-family: 'Prompt', sans-serif;
   list-style: none;

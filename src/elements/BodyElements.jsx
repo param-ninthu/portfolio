@@ -5,7 +5,7 @@ export const Image1 = styled.img`
   height: 150px;
   position: absolute;
   right: calc(10% - 2rem);
-  display: none;
+  /* display: none; */
 `;
 
 export const Image2 = styled.img`
@@ -14,7 +14,7 @@ export const Image2 = styled.img`
   position: absolute;
   left: 5%;
   top: 40%;
-  display: none;
+  /* display: none; */
 `;
 
 export const Image3 = styled.img`
@@ -23,7 +23,7 @@ export const Image3 = styled.img`
   position: absolute;
   left: 5%;
   top: 10%;
-  display: none;
+  /* display: none; */
 `;
 
 export const InnerContainer = styled.div`
