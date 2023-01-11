@@ -7,6 +7,7 @@ export const InnerContainer = styled.div`
   justify-content: start;
   align-items: center;
   height: 800px;
+  background-color: #59ce8f;
 `;
 
 export const Tlist = styled.div`
@@ -53,6 +54,7 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: left;
+  padding-left: 10px;
   align-items: flex-start;
 `;
 
@@ -76,4 +78,30 @@ export const ButtonContainer = styled.div`
   gap: 10px;
 `;
 
-export const LinkButton = styled.div``;
+export const LinkButton = styled.button`
+  display: flex;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  ${(props) => {
+    switch (props.$mode) {
+      case "github":
+        return css`
+          background-color: transparent;
+          border: 2px solid #4649ff;
+          color: #4649ff;
+        `;
+      case "showmore":
+        return css`
+          background-color: #6d67e4;
+        `;
+    }
+  }}
+`;

@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import projectDetails from "./../assets/json/projectDetails.json";
 import {
+  ButtonContainer,
   Heading,
   Image,
   InnerContainer,
+  LinkButton,
   Project,
   ProjectsCard,
 } from "../elements/ProjectElements";
@@ -28,6 +30,10 @@ const Projects = () => {
               <Image src={Charity} />
             </div>
             <Heading>Click and Share </Heading>
+            <ButtonContainer>
+              <LinkButton $mode="github">GitHub</LinkButton>
+              <LinkButton $mode="showmore">ReadMore</LinkButton>
+            </ButtonContainer>
           </Project>
           <Project></Project>
           <Project></Project>

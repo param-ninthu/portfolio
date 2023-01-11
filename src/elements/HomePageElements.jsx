@@ -4,7 +4,7 @@ export const MainContainer = styled.div`
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
   overflow: hidden;
 `;
@@ -36,11 +36,12 @@ export const BodyContainer = styled.section`
   margin-top: 3%;
 `;
 
-export const ProjectConatiner = styled.section`
+export const ProjectContainer = styled.section`
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #08ffc8;
+  background-color: #59ce8f !important;
+  z-index: 1;
 `;

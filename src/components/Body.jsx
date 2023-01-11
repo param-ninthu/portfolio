@@ -11,9 +11,8 @@ import {
   InnerContainer,
   ProfileCard,
   Title,
-  Tlist,
-  SubTitle,
   TechCard,
+  Profile,
 } from "../elements/BodyElements";
 
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
@@ -21,9 +20,11 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import AppleWatch from "./../assets/images/AppleWatch.png";
 import Macbook from "./../assets/images/Macbook.png";
 import ScrewBlue from "./../assets/images/ScrewBlue.png";
-import github from "./../assets/Icons/github.png";
+import github from "./../assets/Icons/githubb.png";
 import gmail from "./../assets/Icons/gmail.png";
 import linkedin from "./../assets/Icons/linkedin.png";
+
+import Pro from "./../assets/images/Profile.jpg";
 
 const Body = () => {
   return (
@@ -35,7 +36,9 @@ const Body = () => {
         <ContentCard>
           <ContentCardContainer>
             <Title>Hi there,</Title>
-            <Title>I'm Ninthukesan</Title>
+            <Title>
+              I'm <span style={{ color: "#59ce8f" }}> Ninthukesan</span>
+            </Title>
             <Content>
               I am a driven individual seeking for an opportunity as a Software
               Engineer where I can polish my skills. Well motivated, smart and
@@ -51,7 +54,9 @@ const Body = () => {
             <Icons src={linkedin} />
           </IconsCard>
         </ContentCard>
-        <ProfileCard>Hello</ProfileCard>
+        <ProfileCard>
+          <Profile src={Pro} />
+        </ProfileCard>
         <TechCard className="fmotion"></TechCard>
       </InnerContainer>
     </>

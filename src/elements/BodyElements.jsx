@@ -5,7 +5,7 @@ export const Image1 = styled.img`
   height: 150px;
   position: absolute;
   right: calc(10% - 2rem);
-  /* display: none; */
+  display: none;
 `;
 
 export const Image2 = styled.img`
@@ -14,7 +14,7 @@ export const Image2 = styled.img`
   position: absolute;
   left: 5%;
   top: 40%;
-  /* display: none; */
+  display: none;
 `;
 
 export const Image3 = styled.img`
@@ -23,7 +23,7 @@ export const Image3 = styled.img`
   position: absolute;
   left: 5%;
   top: 10%;
-  /* display: none; */
+  display: none;
 `;
 
 export const InnerContainer = styled.div`
@@ -48,7 +48,13 @@ export const ProfileCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
+  /* border: 1px solid #fff; */
+`;
+
+export const Profile = styled.img`
+  width: 690px;
+  height: fit-content;
+  border: 1px solid #fff;
 `;
 
 export const TechCard = styled.div`
@@ -119,32 +125,4 @@ export const SubTitle = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
-`;
-
-export const Tlist = styled.div`
-  padding: 3px;
-  border-radius: 5px;
-  font-weight: 400;
-  color: white;
-  font-size: 15px;
-  ${(props) => {
-    switch (props.$mode) {
-      case "frontEnd":
-        return css`
-          background-color: #9c19e0;
-        `;
-      case "backEndEngine":
-        return css`
-          background-color: #5c33f6;
-        `;
-      case "backEnd":
-        return css`
-          background-color: #12947f;
-        `;
-      case "database":
-        return css`
-          background-color: #e41749;
-        `;
-    }
-  }}
 `;
