@@ -47,11 +47,33 @@ export const ProjectsCard = styled.div`
 export const Project = styled.div`
   height: 300px;
   width: 300px;
-  background-color: aquamarine;
+  background-color: #453c67;
   margin-bottom: 15px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  height: 180px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+`;
+
+export const Heading = styled.h3`
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+`;
+
+export const LinkButton = styled.div``;
