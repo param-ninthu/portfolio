@@ -37,7 +37,11 @@ const Body = () => {
           <ContentCardContainer>
             <Title>Hi there,</Title>
             <Title>
-              I'm <span style={{ color: "#59ce8f" }}> Ninthukesan</span>
+              I'm{" "}
+              <span style={{ color: "#59ce8f", fontSize: "50px" }}>
+                {" "}
+                Ninthukesan
+              </span>
             </Title>
             <Content>
               I am a driven individual seeking for an opportunity as a Software

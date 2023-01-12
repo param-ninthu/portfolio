@@ -28,7 +28,7 @@ export const Image3 = styled.img`
 
 export const InnerContainer = styled.div`
   display: grid;
-  grid-template-columns: 20% 50% 30%;
+  grid-template-columns: 30% 40% 30%;
   height: 100%;
   width: 90%;
   margin-top: 20px;
@@ -52,7 +52,7 @@ export const ProfileCard = styled.div`
 `;
 
 export const Profile = styled.img`
-  width: 690px;
+  width: 600px;
   height: fit-content;
 `;
 
