@@ -48,7 +48,6 @@ export const ProjectsCard = styled.div`
 export const Project = styled.div`
   height: 300px;
   width: 300px;
-  background-color: #453c67;
   margin-bottom: 15px;
   border-radius: 5px;
   display: flex;
@@ -56,6 +55,7 @@ export const Project = styled.div`
   justify-content: left;
   padding-left: 10px;
   align-items: flex-start;
+  background: rgba(6, 44, 48, 0.6);
 `;
 
 export const Image = styled.img`
@@ -94,9 +94,16 @@ export const LinkButton = styled.button`
     switch (props.$mode) {
       case "github":
         return css`
-          background-color: transparent;
+          background-color: rgba(70, 73, 255, 0.2);
           border: 2px solid #4649ff;
-          color: #4649ff;
+          color: #fff;
+
+          :hover {
+            border: none;
+            color: #fff;
+            background-color: #4649ff;
+            transition: all ease-in-out 1000ms;
+          }
         `;
       case "showmore":
         return css`

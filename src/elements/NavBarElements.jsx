@@ -4,6 +4,7 @@ export const Logo = styled.div`
   font-weight: 900;
   font-size: 2rem;
   margin-left: 5px;
+  color: #59ce8f !important;
 `;
 
 export const NavLinkContainer = styled.div`
@@ -72,9 +73,10 @@ export const List = styled.li`
   text-decoration: none;
   cursor: pointer;
   height: fit-content;
+  color: #59ce8f !important;
 
   :hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #59ce8f;
     border-width: 3px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;

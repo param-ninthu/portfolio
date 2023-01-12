@@ -54,7 +54,6 @@ export const ProfileCard = styled.div`
 export const Profile = styled.img`
   width: 690px;
   height: fit-content;
-  border: 1px solid #fff;
 `;
 
 export const TechCard = styled.div`

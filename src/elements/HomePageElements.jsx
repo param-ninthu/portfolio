@@ -20,9 +20,7 @@ export const NavContainer = styled.section`
   padding-top: 5px;
   position: fixed;
   z-index: 1;
-  background-color: #22577a;
-  opacity: 0.8;
-  color: #fff;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
 
   /* border: 1px solid #000; */
 `;
