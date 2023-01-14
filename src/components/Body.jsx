@@ -62,7 +62,6 @@ const Body = () => {
         <ProfileCard>
           <Profile src={Pro} />
         </ProfileCard>
-        <TechCard className="fmotion"></TechCard>
       </InnerContainer>
     </>
   );

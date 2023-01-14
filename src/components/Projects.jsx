@@ -27,7 +27,7 @@ const Projects = () => {
       <InnerContainer>
         <Title>Projects</Title>
         <ProjectsCard>
-          <Project>
+          {/* <Project>
             <div className="image">
               <ImageW src={Knot} />
 
@@ -53,7 +53,7 @@ const Projects = () => {
             </ButtonContainer>
           </Project>
           <Project></Project>
-          <Project></Project>
+          <Project></Project> */}
         </ProjectsCard>
       </InnerContainer>
     </>

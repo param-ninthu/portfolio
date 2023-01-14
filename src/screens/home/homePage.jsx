@@ -6,6 +6,7 @@ import {
   MainContainer,
   NavContainer,
   BodyContainer,
+  ProjectContainer,
 } from "../../elements/HomePageElements";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -36,8 +37,10 @@ const Home = () => {
         </NavContainer>
         <BodyContainer>
           <Body />
-          <Projects />
         </BodyContainer>
+        <ProjectContainer>
+          <Projects />
+        </ProjectContainer>
       </MainContainer>
     </>
   );

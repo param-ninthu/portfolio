@@ -3,9 +3,8 @@ import styled, { css } from "styled-components";
 export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: start;
-  align-items: center;
+  width: 75%;
+  justify-content: left;
   height: 800px;
 `;
 
@@ -38,8 +37,9 @@ export const Tlist = styled.div`
 `;
 
 export const ProjectsCard = styled.div`
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 `;
