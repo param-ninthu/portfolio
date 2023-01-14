@@ -7,7 +7,6 @@ export const InnerContainer = styled.div`
   justify-content: start;
   align-items: center;
   height: 800px;
-  background-color: #59ce8f;
 `;
 
 export const Tlist = styled.div`

@@ -20,11 +20,12 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import AppleWatch from "./../assets/images/AppleWatch.png";
 import Macbook from "./../assets/images/Macbook.png";
 import ScrewBlue from "./../assets/images/ScrewBlue.png";
-import github from "./../assets/Icons/githubb.png";
-import gmail from "./../assets/Icons/gmail.png";
-import linkedin from "./../assets/Icons/linkedin.png";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import Pro from "./../assets/images/Profile.jpg";
+import { green } from "@mui/material/colors";
 
 const Body = () => {
   return (
@@ -53,9 +54,9 @@ const Body = () => {
             </Content>
           </ContentCardContainer>
           <IconsCard>
-            <Icons src={gmail} />
-            <Icons src={github} />
-            <Icons src={linkedin} />
+            <EmailIcon sx={{ fontSize: 30 }} />
+            <GitHubIcon sx={{ fontSize: 30 }} />
+            <LinkedInIcon sx={{ fontSize: 30 }} />
           </IconsCard>
         </ContentCard>
         <ProfileCard>

@@ -27,7 +27,7 @@ export const NavContainer = styled.section`
 export const BodyContainer = styled.section`
   display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -40,6 +40,5 @@ export const ProjectContainer = styled.section`
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #59ce8f !important;
   z-index: 1;
 `;

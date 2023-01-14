@@ -88,6 +88,7 @@ export const IconsCard = styled.div`
   justify-content: space-between;
   gap: 50px;
   align-items: center;
+  color: "#59ce8f";
 `;
 
 export const Icons = styled.img`
