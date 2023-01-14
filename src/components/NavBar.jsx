@@ -23,7 +23,7 @@ const NavBar = () => {
         </UoList>
       </NavLinkContainer>
       <NavButtonContainer>
-        <ContactButton>Let's Talk</ContactButton>
+        <ContactButton>Resume</ContactButton>
       </NavButtonContainer>
     </>
   );

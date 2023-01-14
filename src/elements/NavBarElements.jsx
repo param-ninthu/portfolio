@@ -26,9 +26,18 @@ export const ContactButton = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
+  border: 1px solid #59ce8f;
   border-radius: 5px;
   animation: wiggle 2s linear infinite;
+  color: #59ce8f;
+  font-weight: 600;
+  cursor: pointer;
+
+  :hover {
+    background-color: rgba(89, 206, 143, 0.3);
+    z-index: 1;
+    transition: all ease-in-out 1000ms;
+  }
 
   @keyframes wiggle {
     0%,

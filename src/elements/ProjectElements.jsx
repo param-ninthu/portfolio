@@ -57,9 +57,16 @@ export const Project = styled.div`
   background: rgba(6, 44, 48, 0.6);
 `;
 
-export const Image = styled.img`
+export const Imageh = styled.img`
   height: 180px;
   width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+`;
+
+export const ImageW = styled.img`
+  height: 100px;
+  width: 180px;
   border-radius: 5px;
   margin-top: 10px;
 `;
