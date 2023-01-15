@@ -5,7 +5,7 @@ export const InnerContainer = styled.div`
   flex-direction: column;
   width: 75%;
   justify-content: left;
-  height: 800px;
+  height: auto;
 `;
 
 export const Tlist = styled.div`
@@ -48,7 +48,6 @@ export const Project = styled.div`
   display: flex;
   width: 100%;
   height: 450px;
-  border: 1px solid #fff;
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -67,7 +66,6 @@ export const ProjectImageCard = styled.div`
   display: flex;
   height: 100%;
   width: 50%;
-
   ${(props) => {
     switch (props.$mode) {
       case "w":
@@ -77,6 +75,26 @@ export const ProjectImageCard = styled.div`
       case "h":
         return css`
           flex-direction: row;
+          align-items: center;
+          gap: 50px;
+        `;
+    }
+  }}
+
+  ${(props) => {
+    switch (props.$align) {
+      case "right":
+        return css`
+          justify-content: left;
+        `;
+      case "left":
+        return css`
+          justify-content: right;
+        `;
+      case "right-right":
+        return css`
+          align-items: flex-end;
+          justify-content: right;
         `;
     }
   }}
@@ -85,7 +103,6 @@ export const ProjectImageCard = styled.div`
 export const ProjectContentCard = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 50%;
   ${(props) => {
     switch (props.$mode) {
@@ -106,8 +123,8 @@ export const Image = styled.img`
     switch (props.$mode) {
       case "h":
         return css`
-          height: 300px;
-          width: 150px;
+          height: 350px;
+          width: 200px;
           border-radius: 5px;
           margin-top: 10px;
         `;
@@ -126,7 +143,6 @@ export const Heading = styled.h3`
   font-size: 30px;
   font-weight: 600;
   color: #fff;
-  border: 1px solid #fff;
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -180,15 +196,37 @@ export const Description = styled.p`
 export const TechList = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: left;
   gap: 10px;
   margin-top: 10px;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          justify-content: left;
+        `;
+      case "right":
+        return css`
+          justify-content: right;
+        `;
+    }
+  }}
 `;
 
 export const Actionbutton = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          justify-content: left;
+        `;
+      case "right":
+        return css`
+          justify-content: right;
+        `;
+    }
+  }}
   gap: 10px;
   margin-top: 10px;
 `;
@@ -207,8 +245,6 @@ export const LinkButton = styled.a`
   width: auto;
   height: auto;
   padding: 10px;
-  margin: 10px;
-  border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -216,8 +252,7 @@ export const LinkButton = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   :hover {
-    background-color: #fff;
-    color: #000;
+    color: #59ce8f;
     transition: all 0.2s ease-in-out;
   }
 `;

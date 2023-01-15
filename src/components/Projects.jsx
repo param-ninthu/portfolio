@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import projectDetails from "./../assets/json/projectDetails.json";
 import {
-  ButtonContainer,
+  Tlist,
   Heading,
   Image,
   InnerContainer,
@@ -25,6 +25,12 @@ import CharityLogin from "./../assets/images/charitylog.png";
 import Knot from "./../assets/images/Knot.png";
 import KnotProfile from "./../assets/images/knotprofile.png";
 
+import OWMF from "./../assets/images/owmf.png";
+import OWM from "./../assets/images/owm.png";
+
+import AdminDash from "./../assets/images/adminDash.png";
+import Login from "./../assets/images/login.png";
+
 import "./../elements/body.css";
 import { Title } from "../elements/BodyElements";
 
@@ -35,7 +41,7 @@ const Projects = () => {
         <Title>Projects</Title>
         <ProjectsCard>
           <Project $mode="left">
-            <ProjectImageCard $mode="w">
+            <ProjectImageCard $mode="w" $align="left">
               <Image $mode="w" src={Knot} />
               <Image $mode="w" src={KnotProfile} />
             </ProjectImageCard>
@@ -48,15 +54,118 @@ const Projects = () => {
                 wedding by providing you with a checklist of things to do and
                 also helps you to find the best vendors for your wedding.
               </Description>
-              <TechList>
-                <li>React Js</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-                <li>Material UI</li>
-                <li>Tailwind CSS</li>
+              <TechList $mode="right">
+                <Tlist $mode="frontEnd">React JS</Tlist>
+                <Tlist $mode="backEndEngine">Node JS</Tlist>
+                <Tlist $mode="backEnd">Express JS</Tlist>
+                <Tlist $mode="database">PostgreSQL</Tlist>
+                <Tlist $mode="frontEnd">Material UI</Tlist>
+                <Tlist $mode="frontEnd">Tailwind CSS</Tlist>
               </TechList>
-              <Actionbutton>
+              <Actionbutton $mode="right">
+                <LinkButton
+                  href="
+                  "
+                  target="_blank"
+                >
+                  <GitHubIcon className="" sx={{ fontSize: 30 }} />
+                </LinkButton>
+              </Actionbutton>
+            </ProjectContentCard>
+          </Project>
+          <Project $mode="right">
+            <ProjectImageCard $mode="h" $align="left">
+              <Image $mode="h" src={CharityLogin} />
+
+              <Image $mode="h" src={Charity} />
+            </ProjectImageCard>
+            <ProjectContentCard $mode="left">
+              <SubHeading $mode="left">
+                {" "}
+                Marketing platform for Charities{" "}
+              </SubHeading>
+              <Heading $mode="left">Click and Share</Heading>
+              <Description $mode="left">
+                Allow charities to market their own products also they can
+                request for donations from the users. The users can donate to
+                the charities and also they can buy the products from the
+                charities.
+              </Description>
+              <TechList $mode="left">
+                <Tlist $mode="frontEnd">React Native</Tlist>
+                <Tlist $mode="backEnd">Firebase</Tlist>
+                <Tlist $mode="frontEnd">Style Sheet</Tlist>
+              </TechList>
+              <Actionbutton $mode="left">
+                <LinkButton
+                  href="
+                  "
+                  target="_blank"
+                >
+                  <GitHubIcon className="" sx={{ fontSize: 30 }} />
+                </LinkButton>
+              </Actionbutton>
+            </ProjectContentCard>
+          </Project>
+          <Project $mode="left">
+            <ProjectImageCard $mode="w" $align="left">
+              <Image $mode="w" src={AdminDash} />
+              <Image $mode="w" src={Login} />
+            </ProjectImageCard>
+            <ProjectContentCard $mode="right">
+              <SubHeading $mode="right">
+                {" "}
+                Online Marketing platform for Farmers{" "}
+              </SubHeading>
+              <Heading $mode="right">Agrofy</Heading>
+              <Description $mode="right">
+                Providing interfaces to the Business organizations like
+                supermarkets and restaurants to buy the excess yield from
+                farmers. Also providing interfaces to the farmers to sell their
+                excess yield to the business organizations.
+              </Description>
+              <TechList $mode="right">
+                <Tlist $mode="frontEnd">HTML</Tlist>
+                <Tlist $mode="backEnd">PHP</Tlist>
+                <Tlist $mode="database">MySQL</Tlist>
+                <Tlist $mode="frontEnd">JavaScript</Tlist>
+                <Tlist $mode="frontEnd">CSS</Tlist>
+              </TechList>
+              <Actionbutton $mode="right">
+                <LinkButton
+                  href="
+                  "
+                  target="_blank"
+                >
+                  <GitHubIcon className="" sx={{ fontSize: 30 }} />
+                </LinkButton>
+              </Actionbutton>
+            </ProjectContentCard>
+          </Project>
+          <Project $mode="right">
+            <ProjectImageCard $mode="w" $align="right-right">
+              <Image $mode="w" src={OWMF} />
+              <Image $mode="w" src={OWM} />
+            </ProjectImageCard>
+            <ProjectContentCard $mode="left">
+              <SubHeading $mode="left">
+                {" "}
+                Basic Weather map with API integrations{" "}
+              </SubHeading>
+              <Heading $mode="left">Suggest me Weather</Heading>
+              <Description $mode="left">
+                Learning project inorder to learn the API integrations. So here
+                we are implemented Google cloud API , MapBox API , Open
+                Weathermap API in order to build this system.
+              </Description>
+              <TechList $mode="left">
+                <Tlist $mode="frontEnd">HTML</Tlist>
+                <Tlist $mode="backEnd">Python</Tlist>
+                <Tlist $mode="database">Django</Tlist>
+                <Tlist $mode="database">PostgreSQL</Tlist>
+                <Tlist $mode="frontEnd">CSS</Tlist>
+              </TechList>
+              <Actionbutton $mode="left">
                 <LinkButton
                   href="
                   "
