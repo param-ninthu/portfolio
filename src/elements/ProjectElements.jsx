@@ -45,36 +45,152 @@ export const ProjectsCard = styled.div`
 `;
 
 export const Project = styled.div`
-  height: 300px;
-  width: 300px;
-  margin-bottom: 15px;
-  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #fff;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          flex-direction: row;
+        `;
+      case "right":
+        return css`
+          flex-direction: row-reverse;
+        `;
+    }
+  }}
+`;
+
+export const ProjectImageCard = styled.div`
+  display: flex;
+  height: 100%;
+  width: 50%;
+
+  ${(props) => {
+    switch (props.$mode) {
+      case "w":
+        return css`
+          flex-direction: column;
+        `;
+      case "h":
+        return css`
+          flex-direction: row;
+        `;
+    }
+  }}
+`;
+
+export const ProjectContentCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  padding-left: 10px;
-  align-items: flex-start;
-  background: rgba(6, 44, 48, 0.6);
+  height: 100%;
+  width: 50%;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          justify-content: left;
+        `;
+      case "right":
+        return css`
+          justify-content: right;
+        `;
+    }
+  }}
 `;
 
-export const Imageh = styled.img`
-  height: 180px;
-  width: 100px;
-  border-radius: 5px;
-  margin-top: 10px;
-`;
-
-export const ImageW = styled.img`
-  height: 100px;
-  width: 180px;
-  border-radius: 5px;
-  margin-top: 10px;
+export const Image = styled.img`
+  ${(props) => {
+    switch (props.$mode) {
+      case "h":
+        return css`
+          height: 300px;
+          width: 150px;
+          border-radius: 5px;
+          margin-top: 10px;
+        `;
+      case "w":
+        return css`
+          height: 200px;
+          width: 400px;
+          border-radius: 5px;
+          margin-top: 10px;
+        `;
+    }
+  }}
 `;
 
 export const Heading = styled.h3`
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 600;
   color: #fff;
+  border: 1px solid #fff;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          text-align: left;
+        `;
+      case "right":
+        return css`
+          text-align: right;
+        `;
+    }
+  }}
+`;
+
+export const SubHeading = styled.h4`
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          text-align: left;
+        `;
+      case "right":
+        return css`
+          text-align: right;
+        `;
+    }
+  }}
+`;
+
+export const Description = styled.p`
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          text-align: left;
+        `;
+      case "right":
+        return css`
+          text-align: right;
+        `;
+    }
+  }}
+`;
+
+export const TechList = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+export const Actionbutton = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
 `;
 
 export const ButtonContainer = styled.div`
@@ -84,37 +200,24 @@ export const ButtonContainer = styled.div`
   gap: 10px;
 `;
 
-export const LinkButton = styled.button`
+export const LinkButton = styled.a`
   display: flex;
-  border-radius: 5px;
-  height: 40px;
-  width: 100px;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
   color: #fff;
+  text-decoration: none;
   font-weight: 500;
-  border: none;
-  ${(props) => {
-    switch (props.$mode) {
-      case "github":
-        return css`
-          background-color: rgba(70, 73, 255, 0.2);
-          border: 2px solid #4649ff;
-          color: #fff;
-
-          :hover {
-            border: none;
-            color: #fff;
-            background-color: #4649ff;
-            transition: all ease-in-out 1000ms;
-          }
-        `;
-      case "showmore":
-        return css`
-          background-color: #6d67e4;
-        `;
-    }
-  }}
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
 `;
