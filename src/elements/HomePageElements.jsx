@@ -42,3 +42,13 @@ export const ProjectContainer = styled.section`
   align-items: center;
   z-index: 1;
 `;
+
+export const WorkContainer = styled.section`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+`;

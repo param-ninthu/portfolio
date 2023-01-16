@@ -13,6 +13,7 @@ import {
   Title,
   TechCard,
   Profile,
+  TechIcons,
 } from "../elements/BodyElements";
 
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
@@ -23,6 +24,12 @@ import ScrewBlue from "./../assets/images/ScrewBlue.png";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import ReactI from "./../assets/Icons/react.png";
+import JavaI from "./../assets/Icons/java.png";
+import FlutterI from "./../assets/Icons/flutter.png";
+import PythonI from "./../assets/Icons/python.png";
+import NodejsI from "./../assets/Icons/nodejs.png";
 
 import Pro from "./../assets/images/Profile.jpg";
 import { green } from "@mui/material/colors";
@@ -53,6 +60,13 @@ const Body = () => {
               prospects.
             </Content>
           </ContentCardContainer>
+          <TechCard>
+            <TechIcons src={PythonI} />
+            <TechIcons src={JavaI} />
+            <TechIcons src={ReactI} />
+            <TechIcons src={FlutterI} />
+            <TechIcons $mode="w" src={NodejsI} />
+          </TechCard>
           <IconsCard>
             <EmailIcon sx={{ fontSize: 30 }} />
             <GitHubIcon sx={{ fontSize: 30 }} />

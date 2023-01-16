@@ -15,6 +15,7 @@ import {
   Description,
   TechList,
   Actionbutton,
+  DescritptionCard,
 } from "../elements/ProjectElements";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -48,12 +49,15 @@ const Projects = () => {
             <ProjectContentCard $mode="right">
               <SubHeading $mode="right"> Online wedding planner </SubHeading>
               <Heading $mode="right">Knot</Heading>
-              <Description $mode="right">
-                Knot is an online wedding planner that helps you plan your
-                wedding. It is a web application that helps you to plan your
-                wedding by providing you with a checklist of things to do and
-                also helps you to find the best vendors for your wedding.
-              </Description>
+              <DescritptionCard $mode="left">
+                <Description $mode="right">
+                  Knot is an online wedding planner that helps you plan your
+                  wedding. It is a web application that helps you to plan your
+                  wedding by providing you with a checklist of things to do and
+                  also helps you to find the best vendors for your wedding.
+                </Description>
+              </DescritptionCard>
+
               <TechList $mode="right">
                 <Tlist $mode="frontEnd">React JS</Tlist>
                 <Tlist $mode="backEndEngine">Node JS</Tlist>
@@ -85,12 +89,14 @@ const Projects = () => {
                 Marketing platform for Charities{" "}
               </SubHeading>
               <Heading $mode="left">Click and Share</Heading>
-              <Description $mode="left">
-                Allow charities to market their own products also they can
-                request for donations from the users. The users can donate to
-                the charities and also they can buy the products from the
-                charities.
-              </Description>
+              <DescritptionCard $mode="right">
+                <Description $mode="left">
+                  Allow charities to market their own products also they can
+                  request for donations from the users. The users can donate to
+                  the charities and also they can buy the products from the
+                  charities.
+                </Description>
+              </DescritptionCard>
               <TechList $mode="left">
                 <Tlist $mode="frontEnd">React Native</Tlist>
                 <Tlist $mode="backEnd">Firebase</Tlist>
@@ -118,12 +124,14 @@ const Projects = () => {
                 Online Marketing platform for Farmers{" "}
               </SubHeading>
               <Heading $mode="right">Agrofy</Heading>
-              <Description $mode="right">
-                Providing interfaces to the Business organizations like
-                supermarkets and restaurants to buy the excess yield from
-                farmers. Also providing interfaces to the farmers to sell their
-                excess yield to the business organizations.
-              </Description>
+              <DescritptionCard $mode="left">
+                <Description $mode="right">
+                  Providing interfaces to the Business organizations like
+                  supermarkets and restaurants to buy the excess yield from
+                  farmers. Also providing interfaces to the farmers to sell
+                  their excess yield to the business organizations.
+                </Description>
+              </DescritptionCard>
               <TechList $mode="right">
                 <Tlist $mode="frontEnd">HTML</Tlist>
                 <Tlist $mode="backEnd">PHP</Tlist>
@@ -153,11 +161,13 @@ const Projects = () => {
                 Basic Weather map with API integrations{" "}
               </SubHeading>
               <Heading $mode="left">Suggest me Weather</Heading>
-              <Description $mode="left">
-                Learning project inorder to learn the API integrations. So here
-                we are implemented Google cloud API , MapBox API , Open
-                Weathermap API in order to build this system.
-              </Description>
+              <DescritptionCard $mode="right">
+                <Description $mode="left">
+                  Learning project inorder to learn the API integrations. So
+                  here we are implemented Google cloud API , MapBox API , Open
+                  Weathermap API in order to build this system.
+                </Description>
+              </DescritptionCard>
               <TechList $mode="left">
                 <Tlist $mode="frontEnd">HTML</Tlist>
                 <Tlist $mode="backEnd">Python</Tlist>

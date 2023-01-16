@@ -104,6 +104,8 @@ export const ProjectContentCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-top: 50px;
+  row-gap: 10px;
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -123,7 +125,7 @@ export const Image = styled.img`
     switch (props.$mode) {
       case "h":
         return css`
-          height: 350px;
+          height: 380px;
           width: 200px;
           border-radius: 5px;
           margin-top: 10px;
@@ -139,7 +141,7 @@ export const Image = styled.img`
   }}
 `;
 
-export const Heading = styled.h3`
+export const Heading = styled.div`
   font-size: 30px;
   font-weight: 600;
   color: #fff;
@@ -157,10 +159,11 @@ export const Heading = styled.h3`
   }}
 `;
 
-export const SubHeading = styled.h4`
+export const SubHeading = styled.div`
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: rgba(89, 206, 143, 1);
+
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -193,11 +196,34 @@ export const Description = styled.p`
   }}
 `;
 
+export const DescritptionCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(89, 206, 143, 0.5);
+  border-radius: 10px;
+
+  ${(props) => {
+    switch (props.$mode) {
+      case "right":
+        return css`
+          padding-left: 5px;
+        `;
+      case "left":
+        return css`
+          padding-right: 5px;
+        `;
+    }
+  }}
+`;
+
 export const TechList = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 10px;
+
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -215,6 +241,7 @@ export const TechList = styled.div`
 export const Actionbutton = styled.div`
   display: flex;
   flex-direction: row;
+
   ${(props) => {
     switch (props.$mode) {
       case "left":

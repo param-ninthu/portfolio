@@ -7,9 +7,11 @@ import {
   NavContainer,
   BodyContainer,
   ProjectContainer,
+  WorkContainer,
 } from "../../elements/HomePageElements";
 
 import { animateScroll as scroll } from "react-scroll";
+import Work from "../../components/Work";
 
 const Home = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -38,6 +40,9 @@ const Home = () => {
         <BodyContainer>
           <Body />
         </BodyContainer>
+        <WorkContainer>
+          <Work />
+        </WorkContainer>
         <ProjectContainer>
           <Projects />
         </ProjectContainer>

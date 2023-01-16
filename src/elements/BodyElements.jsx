@@ -46,7 +46,6 @@ export const ContentCard = styled.div`
 export const ProfileCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   /* border: 1px solid #fff; */
 `;
@@ -58,10 +57,38 @@ export const Profile = styled.img`
 
 export const TechCard = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+`;
+
+export const TechIcons = styled.img`
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  &:active {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+
+  ${(props) => {
+    switch (props.$mode) {
+      case "w":
+        return css`
+          height: 50px;
+          width: 80px;
+        `;
+    }
+  }}
 `;
 
 export const ContentCardContainer = styled.div`
@@ -89,6 +116,8 @@ export const IconsCard = styled.div`
   gap: 50px;
   align-items: center;
   color: "#59ce8f";
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const Icons = styled.img`
