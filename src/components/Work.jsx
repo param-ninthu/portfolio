@@ -1,5 +1,12 @@
 import React from "react";
-import { Heading, InnnerContainer, SubHeading } from "../elements/WorkElements";
+import {
+  Description,
+  Heading,
+  InnnerContainer,
+  SubHeading,
+  TechList,
+  Tlist,
+} from "../elements/WorkElements";
 
 const Work = () => {
   return (
@@ -13,6 +20,22 @@ const Work = () => {
             Effective Solutions{" "}
           </span>
         </SubHeading>
+        <div>
+          {" "}
+          <span style={{ color: "#59ce8f", cursor: "pointer" }}>
+            2022 November - Present{" "}
+          </span>{" "}
+        </div>
+        <Description>
+          Route Radar - Tracking management system. Developing a mobile
+          application for Fleet management. This mobile application will be used
+          for track of vehicles movements through devices. At the beginning I
+          was worked on UI development.
+        </Description>
+        <TechList>
+          <Tlist $mode="frontEnd"> Flutter </Tlist>
+          <Tlist $mode="database"> MongoDB </Tlist>
+        </TechList>
       </InnnerContainer>
     </>
   );
