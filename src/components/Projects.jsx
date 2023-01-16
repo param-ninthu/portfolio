@@ -70,7 +70,7 @@ const Projects = () => {
               </TechList>
               <Actionbutton $mode="right">
                 <LinkButton
-                  href="
+                  href="https://github.com/Knot-17
                   "
                   target="_blank"
                 >
@@ -106,7 +106,7 @@ const Projects = () => {
               </TechList>
               <Actionbutton $mode="left">
                 <LinkButton
-                  href="
+                  href="https://github.com/param-ninthu/Charity.git
                   "
                   target="_blank"
                 >
@@ -143,7 +143,7 @@ const Projects = () => {
               </TechList>
               <Actionbutton $mode="right">
                 <LinkButton
-                  href="
+                  href="https://github.com/param-ninthu/Agrofy
                   "
                   target="_blank"
                 >
@@ -179,7 +179,7 @@ const Projects = () => {
               </TechList>
               <Actionbutton $mode="left">
                 <LinkButton
-                  href="
+                  href="https://github.com/param-ninthu/OurGroupProject
                   "
                   target="_blank"
                 >

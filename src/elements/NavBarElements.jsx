@@ -20,7 +20,7 @@ export const NavButtonContainer = styled.div`
   margin-right: 5px;
 `;
 
-export const ContactButton = styled.div`
+export const ResumeLink = styled.a`
   height: 40px;
   width: 100px;
   display: flex;
@@ -33,6 +33,7 @@ export const ContactButton = styled.div`
   color: #59ce8f;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 
   :hover {
     background-color: rgba(89, 206, 143, 0.3);

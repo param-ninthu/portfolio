@@ -33,6 +33,7 @@ import NodejsI from "./../assets/Icons/nodejs.png";
 
 import Pro from "./../assets/images/Profile.jpg";
 import { green } from "@mui/material/colors";
+import { LinkButton } from "../elements/ProjectElements";
 
 const Body = () => {
   return (
@@ -68,9 +69,23 @@ const Body = () => {
             <TechIcons $mode="w" src={NodejsI} />
           </TechCard>
           <IconsCard>
-            <EmailIcon sx={{ fontSize: 30 }} />
-            <GitHubIcon sx={{ fontSize: 30 }} />
-            <LinkedInIcon sx={{ fontSize: 30 }} />
+            <LinkButton href="mailto:ninthu1999@gmail.com" target="_blank">
+              <EmailIcon sx={{ fontSize: 30 }} />
+            </LinkButton>
+            <LinkButton
+              href="https://github.com/param-ninthu
+                  "
+              target="_blank"
+            >
+              <GitHubIcon sx={{ fontSize: 30 }} />
+            </LinkButton>
+            <LinkButton
+              href="https://www.linkedin.com/in/ninthu-param-0264b919b/
+                  "
+              target="_blank"
+            >
+              <LinkedInIcon sx={{ fontSize: 30 }} />
+            </LinkButton>
           </IconsCard>
         </ContentCard>
         <ProfileCard>

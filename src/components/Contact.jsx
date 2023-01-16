@@ -18,16 +18,30 @@ const Contact = () => {
         </Title>
         <ContactDetails>
           <ContactDetailsItem>
-            <CallIcon />
-            <div> 0766194332 </div>
+            <CallIcon sx={{ fontSize: 30 }} />
+            <div style={{ textDecoration: "none", color: "#59ce8f" }}>
+              {" "}
+              0766194332{" "}
+            </div>
           </ContactDetailsItem>
           <ContactDetailsItem>
-            <EmailIcon />
-            <div> ninthu1999@gmail.com </div>
+            <EmailIcon sx={{ fontSize: 30 }} />
+            <div>
+              <a
+                style={{ textDecoration: "none", color: "#59ce8f" }}
+                href="mailto:ninthu1999@gmail.com"
+              >
+                {" "}
+                ninthu1999@gmail.com
+              </a>{" "}
+            </div>
           </ContactDetailsItem>
           <ContactDetailsItem>
-            <HomeIcon />
-            <div> No 2/8/8, Seaview Residencies, Lunawa. </div>
+            <HomeIcon sx={{ fontSize: 30 }} />
+            <div style={{ textDecoration: "none", color: "#59ce8f" }}>
+              {" "}
+              No 2/8/8, Seaview Residencies, Lunawa.{" "}
+            </div>
           </ContactDetailsItem>
         </ContactDetails>
       </InnerContainer>

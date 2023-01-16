@@ -1,7 +1,7 @@
 import React from "react";
 import {
   BodyContainer,
-  ContactButton,
+  ResumeLink,
   List,
   Logo,
   NavButtonContainer,
@@ -9,6 +9,8 @@ import {
   NavLinkContainer,
   UoList,
 } from "../elements/NavBarElements";
+
+import Resume from "./../assets/pdf/Ninthu.pdf";
 
 const NavBar = () => {
   return (
@@ -21,7 +23,9 @@ const NavBar = () => {
           <List>Projects</List>
           <List>Contact</List>
           <NavButtonContainer>
-            <ContactButton>Resume</ContactButton>
+            <ResumeLink href={Resume} target={"_blank"}>
+              Resume
+            </ResumeLink>
           </NavButtonContainer>
         </UoList>
       </NavLinkContainer>
