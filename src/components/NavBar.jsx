@@ -17,14 +17,14 @@ const NavBar = () => {
       <NavLinkContainer>
         <UoList>
           <List>Home</List>
-          <List>Works</List>
-          <List>Services</List>
-          <List>About me</List>
+          <List>Experience</List>
+          <List>Projects</List>
+          <List>Contact</List>
+          <NavButtonContainer>
+            <ContactButton>Resume</ContactButton>
+          </NavButtonContainer>
         </UoList>
       </NavLinkContainer>
-      <NavButtonContainer>
-        <ContactButton>Resume</ContactButton>
-      </NavButtonContainer>
     </>
   );
 };

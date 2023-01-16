@@ -97,9 +97,15 @@ export const ContentCardContainer = styled.div`
   justify-content: left;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.div`
   font-size: 40px;
   font-weight: 800;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  margin-bottom: 20px;
 `;
 
 export const Content = styled.p`

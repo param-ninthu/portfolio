@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -18,7 +20,6 @@ export const NavContainer = styled.section`
   min-height: 7%;
   max-height: 7%;
   padding-top: 5px;
-  position: fixed;
   z-index: 1;
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
 
@@ -27,28 +28,36 @@ export const NavContainer = styled.section`
 export const BodyContainer = styled.section`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3%;
 `;
 
 export const ProjectContainer = styled.section`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 `;
 
 export const WorkContainer = styled.section`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 1;
+`;
+
+export const ContactContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #000;
 `;

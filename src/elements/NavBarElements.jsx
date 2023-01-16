@@ -12,7 +12,8 @@ export const NavLinkContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
+  margin-right: 40px;
 `;
 
 export const NavButtonContainer = styled.div`

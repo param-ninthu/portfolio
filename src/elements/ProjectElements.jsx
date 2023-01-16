@@ -6,7 +6,6 @@ export const InnerContainer = styled.div`
   width: 75%;
   justify-content: left;
   height: auto;
-  height: 100vh;
 `;
 
 export const Tlist = styled.div`

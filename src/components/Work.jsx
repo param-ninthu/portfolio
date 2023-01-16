@@ -1,4 +1,5 @@
 import React from "react";
+import { Title } from "../elements/BodyElements";
 import {
   Description,
   Heading,
@@ -12,6 +13,9 @@ const Work = () => {
   return (
     <>
       <InnnerContainer>
+        <Title>
+          Experience <hr style={{ width: "50%" }} />
+        </Title>
         <Heading> Where I've Worked</Heading>
         <SubHeading>
           {" "}

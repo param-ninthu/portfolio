@@ -8,10 +8,12 @@ import {
   BodyContainer,
   ProjectContainer,
   WorkContainer,
+  ContactContainer,
 } from "../../elements/HomePageElements";
 
 import { animateScroll as scroll } from "react-scroll";
 import Work from "../../components/Work";
+import Contact from "../../components/Contact";
 
 const Home = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -46,6 +48,9 @@ const Home = () => {
         <ProjectContainer>
           <Projects />
         </ProjectContainer>
+        <ContactContainer>
+          <Contact />
+        </ContactContainer>
       </MainContainer>
     </>
   );

@@ -39,7 +39,9 @@ const Projects = () => {
   return (
     <>
       <InnerContainer>
-        <Title>Projects</Title>
+        <Title>
+          Projects <hr style={{ width: "50%" }} />
+        </Title>
         <ProjectsCard>
           <Project $mode="left">
             <ProjectImageCard $mode="w" $align="left">
