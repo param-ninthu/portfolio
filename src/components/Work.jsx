@@ -33,8 +33,8 @@ const Work = () => {
         <Description>
           Route Radar - Tracking management system. Developing a mobile
           application for Fleet management. This mobile application will be used
-          for track of vehicles movements through devices. At the beginning I
-          was worked on UI development.
+          for tracking the movements of the vehicles through devices. At the
+          beginning I worked on UI development.
         </Description>
         <TechList>
           <Tlist $mode="frontEnd"> Flutter </Tlist>

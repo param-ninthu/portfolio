@@ -106,6 +106,7 @@ export const Title = styled.div`
   flex-direction: row;
   width: 50%;
   margin-bottom: 20px;
+  gap: 5px;
 `;
 
 export const Content = styled.p`

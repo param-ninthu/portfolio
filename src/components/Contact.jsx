@@ -27,7 +27,7 @@ const Contact = () => {
           </ContactDetailsItem>
           <ContactDetailsItem>
             <HomeIcon />
-            <div> No 2/8/8 Seaview Residencies, Lunawa </div>
+            <div> No 2/8/8, Seaview Residencies, Lunawa. </div>
           </ContactDetailsItem>
         </ContactDetails>
       </InnerContainer>
