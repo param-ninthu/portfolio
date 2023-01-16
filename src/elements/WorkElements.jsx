@@ -3,10 +3,11 @@ import styled, { css } from "styled-components";
 export const InnnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 40px;
   width: 75%;
+  height: 100vh;
 `;
 
 export const Heading = styled.div`

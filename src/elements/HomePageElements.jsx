@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   padding: 0;
   margin: 0;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
   width: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
 `;
 
 export const NavContainer = styled.section`
