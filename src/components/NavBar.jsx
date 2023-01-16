@@ -15,7 +15,7 @@ import Resume from "./../assets/pdf/Ninthu.pdf";
 const NavBar = () => {
   return (
     <>
-      <Logo>choosen</Logo>
+      <Logo>chosen</Logo>
       <NavLinkContainer>
         <UoList>
           <List
