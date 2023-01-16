@@ -20,6 +20,7 @@ export const NavContainer = styled.section`
   min-height: 7%;
   max-height: 7%;
   padding-top: 5px;
+  position: sticky;
   z-index: 1;
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
 

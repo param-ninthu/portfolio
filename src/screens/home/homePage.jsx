@@ -39,16 +39,16 @@ const Home = () => {
         <NavContainer scrollNav={scrollNav}>
           <NavBar />
         </NavContainer>
-        <BodyContainer>
+        <BodyContainer id="home">
           <Body />
         </BodyContainer>
-        <WorkContainer>
+        <WorkContainer id="experiences">
           <Work />
         </WorkContainer>
-        <ProjectContainer>
+        <ProjectContainer id="projects">
           <Projects />
         </ProjectContainer>
-        <ContactContainer>
+        <ContactContainer id="contact">
           <Contact />
         </ContactContainer>
       </MainContainer>
