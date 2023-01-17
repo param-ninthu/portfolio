@@ -30,6 +30,7 @@ import JavaI from "./../assets/Icons/java.png";
 import FlutterI from "./../assets/Icons/flutter.png";
 import PythonI from "./../assets/Icons/python.png";
 import NodejsI from "./../assets/Icons/nodejs.png";
+import ASP from "./../assets/Icons/asp.png";
 
 import Pro from "./../assets/images/Profile.jpg";
 import { green } from "@mui/material/colors";
@@ -66,6 +67,7 @@ const Body = () => {
             <TechIcons src={JavaI} />
             <TechIcons src={ReactI} />
             <TechIcons src={FlutterI} />
+            <TechIcons $mode="w" src={ASP} />
             <TechIcons $mode="w" src={NodejsI} />
           </TechCard>
           <IconsCard>

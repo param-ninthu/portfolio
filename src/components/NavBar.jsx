@@ -10,7 +10,9 @@ import {
   UoList,
 } from "../elements/NavBarElements";
 
-import Resume from "./../assets/pdf/Ninthu.pdf";
+import Resume from "./../assets/pdf/NinthuCV.pdf";
+
+import CV from "./../assets/images/CV.png";
 
 const NavBar = () => {
   return (
@@ -59,7 +61,7 @@ const NavBar = () => {
             Contact
           </List>
           <NavButtonContainer>
-            <ResumeLink href={Resume} target={"_blank"}>
+            <ResumeLink href={CV} target={"_blank"}>
               Resume
             </ResumeLink>
           </NavButtonContainer>
