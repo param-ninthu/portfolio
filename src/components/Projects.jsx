@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
+
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import projectDetails from "./../assets/json/projectDetails.json";
 import {
@@ -35,7 +37,24 @@ import Login from "./../assets/images/login.png";
 import "./../elements/body.css";
 import { Title } from "../elements/BodyElements";
 
+// create function
+
 const Projects = () => {
+  const [springs, api] = useSpring(() => ({
+    from: { x: 0 },
+  }));
+
+  const showCard = () => {
+    api.start({
+      from: {
+        x: 0,
+      },
+      to: {
+        x: 50,
+      },
+    });
+  };
+
   return (
     <>
       <InnerContainer>
@@ -43,42 +62,45 @@ const Projects = () => {
           Projects <hr style={{ width: "50%" }} />
         </Title>
         <ProjectsCard>
-          <Project $mode="left">
-            <ProjectImageCard $mode="w" $align="left">
-              <Image $mode="w" src={Knot} />
-              <Image $mode="w" src={KnotProfile} />
-            </ProjectImageCard>
-            <ProjectContentCard $mode="right">
-              <SubHeading $mode="right"> Online wedding planner </SubHeading>
-              <Heading $mode="right">Knot</Heading>
-              <DescritptionCard $mode="left">
-                <Description $mode="right">
-                  Knot is an online wedding planner that helps you plan your
-                  wedding. It is a web application that helps you to plan your
-                  wedding by providing you with a checklist of things to do and
-                  also helps you to find the best vendors for your wedding.
-                </Description>
-              </DescritptionCard>
+          <animated.div onClick={showCard} style={springs}>
+            <Project $mode="left">
+              <ProjectImageCard $mode="w" $align="left">
+                <Image $mode="w" src={Knot} />
+                <Image $mode="w" src={KnotProfile} />
+              </ProjectImageCard>
+              <ProjectContentCard $mode="right">
+                <SubHeading $mode="right"> Online wedding planner </SubHeading>
+                <Heading $mode="right">Knot</Heading>
+                <DescritptionCard $mode="left">
+                  <Description $mode="right">
+                    Knot is an online wedding planner that helps you plan your
+                    wedding. It is a web application that helps you to plan your
+                    wedding by providing you with a checklist of things to do
+                    and also helps you to find the best vendors for your
+                    wedding.
+                  </Description>
+                </DescritptionCard>
 
-              <TechList $mode="right">
-                <Tlist $mode="frontEnd">React JS</Tlist>
-                <Tlist $mode="backEndEngine">Node JS</Tlist>
-                <Tlist $mode="backEnd">Express JS</Tlist>
-                <Tlist $mode="database">PostgreSQL</Tlist>
-                <Tlist $mode="frontEnd">Material UI</Tlist>
-                <Tlist $mode="frontEnd">Tailwind CSS</Tlist>
-              </TechList>
-              <Actionbutton $mode="right">
-                <LinkButton
-                  href="https://github.com/Knot-17
+                <TechList $mode="right">
+                  <Tlist $mode="frontEnd">React JS</Tlist>
+                  <Tlist $mode="backEndEngine">Node JS</Tlist>
+                  <Tlist $mode="backEnd">Express JS</Tlist>
+                  <Tlist $mode="database">PostgreSQL</Tlist>
+                  <Tlist $mode="frontEnd">Material UI</Tlist>
+                  <Tlist $mode="frontEnd">Tailwind CSS</Tlist>
+                </TechList>
+                <Actionbutton $mode="right">
+                  <LinkButton
+                    href="https://github.com/Knot-17
                   "
-                  target="_blank"
-                >
-                  <GitHubIcon className="" sx={{ fontSize: 30 }} />
-                </LinkButton>
-              </Actionbutton>
-            </ProjectContentCard>
-          </Project>
+                    target="_blank"
+                  >
+                    <GitHubIcon className="" sx={{ fontSize: 30 }} />
+                  </LinkButton>
+                </Actionbutton>
+              </ProjectContentCard>
+            </Project>
+          </animated.div>
           <Project $mode="right">
             <ProjectImageCard $mode="h" $align="left">
               <Image $mode="h" src={CharityLogin} />
