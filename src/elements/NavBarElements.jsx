@@ -5,21 +5,35 @@ import { Link as LinkS } from "react-scroll";
 export const Logo = styled.div`
   font-weight: 900;
   font-size: 2rem;
-  margin-left: 5px;
+  margin-left: 10px;
   color: #59ce8f !important;
 `;
 
 export const NavLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 40%;
-  margin-right: 40px;
+  margin-right: 10px;
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 0px;
+
+    width: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 10px;
+  }
 `;
 
 export const NavButtonContainer = styled.div`
   margin-right: 5px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
 `;
 
 // export const NavLinks = styled(LinkS)`
@@ -94,6 +108,14 @@ export const UoList = styled.ul`
   align-items: center;
   list-style-type: none;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    justify-content: right;
+  }
+
+  /* @media screen and (max-width: 1024px) {
+    padding-right: 40px;
+  } */
 `;
 
 export const List = styled(LinkS)`
@@ -113,5 +135,15 @@ export const List = styled(LinkS)`
   }
   &.active {
     border-bottom: 3px solid #01bf71;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 10px;
   }
 `;

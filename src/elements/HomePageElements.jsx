@@ -19,11 +19,17 @@ export const NavContainer = styled.section`
   width: 100%;
   min-height: 7%;
   max-height: 7%;
-  padding-top: 5px;
+  padding-top: 10px;
   position: sticky;
   z-index: 1;
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
 
+  @media screen and (max-width: 1024px) {
+    padding-right: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+  }
   /* border: 1px solid #000; */
 `;
 export const BodyContainer = styled.section`

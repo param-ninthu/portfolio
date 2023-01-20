@@ -33,8 +33,19 @@ export const InnerContainer = styled.div`
   width: 75%;
   margin-top: 20px;
   margin-bottom: 40px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 `;
 
 export const ContentCard = styled.div`
@@ -47,12 +58,17 @@ export const ProfileCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
   /* border: 1px solid #fff; */
 `;
 
 export const Profile = styled.img`
   width: 500px;
   height: fit-content;
+
+  @media screen and (max-width: 1024px) {
+    width: 450px;
+  }
 `;
 
 export const TechCard = styled.div`
@@ -112,6 +128,10 @@ export const Title = styled.div`
 export const Content = styled.p`
   font-size: 15px;
   font-weight: 200;
+
+  @media screen and (max-width: 1024px) {
+    text-align: justify;
+  }
 `;
 
 export const IconsCard = styled.div`
