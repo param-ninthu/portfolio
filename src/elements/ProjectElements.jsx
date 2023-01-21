@@ -89,6 +89,7 @@ export const ProjectImageCard = styled.div`
           @media screen and (max-width: 768px) {
             flex-direction: row;
             gap: 20px;
+            justify-content: space-between;
           }
         `;
       case "h":
@@ -96,6 +97,9 @@ export const ProjectImageCard = styled.div`
           flex-direction: row;
           align-items: center;
           gap: 50px;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+          }
         `;
     }
   }}
@@ -134,10 +138,26 @@ export const ProjectContentCard = styled.div`
       case "left":
         return css`
           justify-content: left;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+            width: 100%;
+          }
+          @media screen and (max-width: 425px) {
+            justify-content: left;
+            width: 100%;
+          }
         `;
       case "right":
         return css`
           justify-content: right;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+            width: 100%;
+          }
+          @media screen and (max-width: 425px) {
+            justify-content: left;
+            width: 100%;
+          }
         `;
     }
   }}
@@ -182,6 +202,9 @@ export const Heading = styled.div`
       case "right":
         return css`
           text-align: right;
+          @media screen and (max-width: 768px) {
+            text-align: left;
+          }
         `;
     }
   }}
@@ -201,6 +224,9 @@ export const SubHeading = styled.div`
       case "right":
         return css`
           text-align: right;
+          @media screen and (max-width: 768px) {
+            text-align: left;
+          }
         `;
     }
   }}
@@ -219,6 +245,9 @@ export const Description = styled.p`
       case "right":
         return css`
           text-align: right;
+          @media screen and (max-width: 768px) {
+            text-align: left;
+          }
         `;
     }
   }}
@@ -241,6 +270,11 @@ export const DescritptionCard = styled.div`
       case "left":
         return css`
           padding-right: 5px;
+          @media screen and (max-width: 768px) {
+            text-align: left;
+            padding-right: 0px;
+            padding-left: 5px;
+          }
         `;
     }
   }}
@@ -252,9 +286,6 @@ export const TechList = styled.div`
   gap: 10px;
   margin-top: 10px;
 
-  @media screen and (max-width: 768px) {
-  }
-
   ${(props) => {
     switch (props.$mode) {
       case "left":
@@ -264,6 +295,9 @@ export const TechList = styled.div`
       case "right":
         return css`
           justify-content: right;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+          }
         `;
     }
   }}
@@ -282,6 +316,9 @@ export const Actionbutton = styled.div`
       case "right":
         return css`
           justify-content: right;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+          }
         `;
     }
   }}
