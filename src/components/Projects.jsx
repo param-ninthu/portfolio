@@ -64,9 +64,9 @@ const Projects = () => {
         <ProjectsCard>
           <animated.div onClick={showCard} style={springs}>
             <Project $mode="left">
-              <ProjectImageCard $mode="w" $align="left">
+              <ProjectImageCard $hide="yes" $mode="w" $align="left">
                 <Image $mode="w" src={Knot} />
-                <Image $mode="w" src={KnotProfile} />
+                <Image $hide="yes" $mode="w" src={KnotProfile} />
               </ProjectImageCard>
               <ProjectContentCard $mode="right">
                 <SubHeading $mode="right"> Online wedding planner </SubHeading>
@@ -102,7 +102,7 @@ const Projects = () => {
             </Project>
           </animated.div>
           <Project $mode="right">
-            <ProjectImageCard $mode="h" $align="left">
+            <ProjectImageCard $hide="yes" $mode="h" $align="left">
               <Image $mode="h" src={CharityLogin} />
 
               <Image $mode="h" src={Charity} />
@@ -138,8 +138,8 @@ const Projects = () => {
             </ProjectContentCard>
           </Project>
           <Project $mode="left">
-            <ProjectImageCard $mode="w" $align="left">
-              <Image $mode="w" src={AdminDash} />
+            <ProjectImageCard $hide="yes" $mode="w" $align="left">
+              <Image $hide="yes" $mode="w" src={AdminDash} />
               <Image $mode="w" src={Login} />
             </ProjectImageCard>
             <ProjectContentCard $mode="right">
@@ -175,9 +175,9 @@ const Projects = () => {
             </ProjectContentCard>
           </Project>
           <Project $mode="right">
-            <ProjectImageCard $mode="w" $align="right-right">
+            <ProjectImageCard $hide="yes" $mode="w" $align="right-right">
               <Image $mode="w" src={OWMF} />
-              <Image $mode="w" src={OWM} />
+              <Image $hide="yes" $mode="w" src={OWM} />
             </ProjectImageCard>
             <ProjectContentCard $mode="left">
               <SubHeading $mode="left">

@@ -122,6 +122,22 @@ export const ProjectImageCard = styled.div`
     }
   }}
 
+${(props) => {
+    switch (props.$hide) {
+      case "yes":
+        return css`
+          @media screen and (max-width: 426px) {
+            justify-content: center;
+          }
+        `;
+      case "no":
+        return css`
+          @media screen and (max-width: 425px) {
+          }
+        `;
+    }
+  }}
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -183,6 +199,22 @@ export const Image = styled.img`
           @media screen and (max-width: 768px) {
             height: 200px;
             width: 350px;
+          }
+        `;
+    }
+  }}
+
+  ${(props) => {
+    switch (props.$hide) {
+      case "yes":
+        return css`
+          @media screen and (max-width: 426px) {
+            display: none;
+          }
+        `;
+      case "no":
+        return css`
+          @media screen and (max-width: 425px) {
           }
         `;
     }
