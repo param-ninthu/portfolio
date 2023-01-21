@@ -80,6 +80,13 @@ export const TechCard = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 100%;
+  }
 `;
 
 export const TechIcons = styled.img`

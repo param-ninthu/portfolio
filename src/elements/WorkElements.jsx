@@ -8,6 +8,10 @@ export const InnnerContainer = styled.div`
   margin-bottom: 40px;
   width: 75%;
   height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Heading = styled.div`
