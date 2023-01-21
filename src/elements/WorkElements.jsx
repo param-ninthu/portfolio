@@ -32,6 +32,11 @@ export const Description = styled.div`
   color: #fff;
   font-weight: 400;
   width: 60%;
+
+  @media screen and (max-width: 768px) {
+    text-align: justify;
+    width: 95%;
+  }
 `;
 
 export const TechList = styled.div`

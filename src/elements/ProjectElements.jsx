@@ -6,6 +6,15 @@ export const InnerContainer = styled.div`
   width: 75%;
   justify-content: left;
   height: auto;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    width: 95%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 95%;
+  }
 `;
 
 export const Tlist = styled.div`
@@ -60,6 +69,12 @@ export const Project = styled.div`
         `;
     }
   }}
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const ProjectImageCard = styled.div`
@@ -71,6 +86,10 @@ export const ProjectImageCard = styled.div`
       case "w":
         return css`
           flex-direction: column;
+          @media screen and (max-width: 768px) {
+            flex-direction: row;
+            gap: 20px;
+          }
         `;
       case "h":
         return css`
@@ -98,6 +117,10 @@ export const ProjectImageCard = styled.div`
         `;
     }
   }}
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectContentCard = styled.div`
@@ -136,6 +159,11 @@ export const Image = styled.img`
           width: 400px;
           border-radius: 5px;
           margin-top: 10px;
+
+          @media screen and (max-width: 768px) {
+            height: 200px;
+            width: 350px;
+          }
         `;
     }
   }}
@@ -223,6 +251,9 @@ export const TechList = styled.div`
   flex-direction: row;
   gap: 10px;
   margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+  }
 
   ${(props) => {
     switch (props.$mode) {
