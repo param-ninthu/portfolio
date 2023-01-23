@@ -45,6 +45,29 @@ export const Tlist = styled.div`
   }}
 `;
 
+export const TechList = styled.p`
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  ${(props) => {
+    switch (props.$mode) {
+      case "left":
+        return css`
+          justify-content: left;
+        `;
+      case "right":
+        return css`
+          justify-content: right;
+          @media screen and (max-width: 768px) {
+            justify-content: left;
+          }
+        `;
+    }
+  }}
+`;
+
 export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -306,29 +329,6 @@ export const DescritptionCard = styled.div`
             text-align: left;
             padding-right: 0px;
             padding-left: 5px;
-          }
-        `;
-    }
-  }}
-`;
-
-export const TechList = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: 10px;
-
-  ${(props) => {
-    switch (props.$mode) {
-      case "left":
-        return css`
-          justify-content: left;
-        `;
-      case "right":
-        return css`
-          justify-content: right;
-          @media screen and (max-width: 768px) {
-            justify-content: left;
           }
         `;
     }
