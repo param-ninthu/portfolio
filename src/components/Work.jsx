@@ -14,7 +14,7 @@ const Work = () => {
     <>
       <InnnerContainer>
         <Title>
-          Experienc <hr style={{ width: "50%" }} />
+          Experience <hr style={{ width: "50%" }} />
         </Title>
         <Heading> Where I've Worked</Heading>
         <SubHeading>
