@@ -1,13 +1,6 @@
-import "./App.css";
-import Home from "./screens/home/homePage";
-
+import React from "react";
 function App() {
-  return (
-    <div>
-      {" "}
-      <Home />{" "}
-    </div>
-  );
+  return <></>;
 }
 
 export default App;
