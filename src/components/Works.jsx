@@ -16,6 +16,17 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  // Get the image's aspect ratio
+  const aspectRatio = image.width / image.height;
+
+  // Apply different styles based on the aspect ratio
+  const imageStyles =
+    aspectRatio > 1
+      ? "w-full h-full object-fill rounded-2xl"
+      : "w-full h-full object-contain rounded-2xl";
+
+  const cardImgStyles = aspectRatio > 1 ? "w-full h-auto" : "w-auto h-full";
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -27,13 +38,11 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          <img src={image} alt="project_image" className={imageStyles} />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div
+            className={`absolute inset-0 flex justify-end m-3 ${cardImgStyles}`}
+          >
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
