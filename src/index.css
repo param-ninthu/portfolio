@@ -33,12 +33,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.green-gradient {
+  background: #59ce8f;
+  background: linear-gradient(-90deg, #59ce8f 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #59ce8f 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -81,6 +81,31 @@
   -webkit-text-fill-color: transparent;
 }
 
+.red-text-gradient {
+  background: #ff6e6e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6e6e, #ff9a9e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6e6e, #ff9a9e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-purple-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #FC2947; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #FC2947,
+    #8F43EE
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #FC2947,
+    #8F43EE
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2; /* fallback for old browsers */
@@ -114,6 +139,37 @@
   -webkit-text-fill-color: transparent;
 }
 
+.teal-text-gradient {
+  background: #5cc5cd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5cc5cd, #9cd9d9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5cc5cd, #9cd9d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-blue-text-gradient {
+  background: #7d51f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7d51f8, #4c46c9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7d51f8, #4c46c9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-red-text-gradient {
+  background: #ff6b6b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6b6b, #e84a5f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6b6b, #e84a5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-green-text-gradient {
+  background: #2db2c4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2db2c4, #17c3b2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2db2c4, #17c3b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
