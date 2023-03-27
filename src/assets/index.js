@@ -30,7 +30,22 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import effective from "./company/effective.ico";
+import knot from "./Knot.png";
+import adminDash from "./adminDash.png";
+import charity from "./charity.png";
+import owmf from "./owmf.png";
+import login from "./login.png";
+import charitylog from "./charitylog.png";
+
 export {
+  charitylog,
+  login,
+  knot,
+  owmf,
+  charity,
+  adminDash,
+  effective,
   logo,
   backend,
   creator,

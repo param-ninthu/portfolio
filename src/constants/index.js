@@ -15,13 +15,15 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  login,
   threejs,
+  effective,
+  knot,
+  owmf,
+  charity,
+  adminDash,
+  charitylog,
 } from "../assets";
-
-import effective from "../assets/company/effective.ico";
 
 export const navLinks = [
   {
@@ -195,50 +197,87 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: knot,
+    source_code_link: "https://github.com/Knot-17",
   },
   {
-    name: "Job IT",
+    name: "Click and Share",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Allow charities to market their own products also they can request for donations from the users. The users can donate to the charities and also they can buy the products from the charities.",
     tags: [
       {
-        name: "react",
+        name: "react native",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "red-text-gradient",
       },
       {
-        name: "scss",
+        name: "style sheet",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: charitylog,
+    source_code_link: "https://github.com/param-ninthu/Charity",
   },
   {
-    name: "Trip Guide",
+    name: "Agrofy",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Providing interfaces to the Business organizations like supermarkets and restaurants to buy the excess yield from farmers. Also providing interfaces to the farmers to sell their excess yield to the business organizations.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "php",
         color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "red-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-green-text-gradient  ",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: login,
+    source_code_link: "https://github.com/param-ninthu/Agrofy",
+  },
+  {
+    name: "Suggest me Weather",
+    description:
+      "Learning project inorder to learn the API integrations. So here we are implemented Google cloud API , MapBox API , Open Weathermap API in order to build this system.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "red-text-gradient",
+      },
+      {
+        name: "django",
+        color: "blue-green-text-gradient  ",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: owmf,
+    source_code_link: "https://github.com/param-ninthu/OurGroupProject",
   },
 ];
 
