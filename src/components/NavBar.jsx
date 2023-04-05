@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "./../styles";
 import { navLinks } from "./../constants/index";
 import { logo, menu, close } from "./../assets";
-import { SectionWrapper } from "../hoc";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -75,4 +74,4 @@ const Navbar = () => {
   );
 };
 
-export default SectionWrapper(Navbar, "navbar");
+export default Navbar;
