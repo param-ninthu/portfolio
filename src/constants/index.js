@@ -23,6 +23,11 @@ import {
   charity,
   adminDash,
   charitylog,
+  spring,
+  java,
+  vue,
+  flutter,
+  movieReview,
 } from "../assets";
 
 export const navLinks = [
@@ -42,30 +47,30 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
+  {
+    title: "Mobile Developer",
+    icon: mobile,
+  },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Flutter",
+    icon: flutter,
   },
   {
-    name: "JavaScript",
+    name: "Javascript",
     icon: javascript,
   },
   {
@@ -73,13 +78,14 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Vue JS",
+    icon: vue,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Springboot",
+    icon: spring,
   },
+
   {
     name: "Node JS",
     icon: nodejs,
@@ -89,20 +95,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
 ];
 
@@ -185,6 +179,10 @@ const projects = [
         color: "red-text-gradient",
       },
       {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
         name: "postgresql",
         color: "blue-green-text-gradient  ",
       },
@@ -220,6 +218,31 @@ const projects = [
     ],
     image: charitylog,
     source_code_link: "https://github.com/param-ninthu/Charity",
+  },
+  {
+    name: "Movie Review (Learning)",
+    description:
+      "This is a learning project to learn the basics of springboot. This project is a movie review application where the user can see the details of the movie and can also review the movie.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "springboot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: movieReview,
+    source_code_link: "https://github.com/param-ninthu/movies",
   },
   {
     name: "Agrofy",

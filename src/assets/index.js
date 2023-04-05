@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import spring from "./tech/spring.png";
+import vue from "./tech/vue.png";
+import flutter from "./tech/flutter.png";
+import java from "./tech/java.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -37,8 +41,10 @@ import charity from "./charity.png";
 import owmf from "./owmf.png";
 import login from "./login.png";
 import charitylog from "./charitylog.png";
+import movieReview from "./movieReview.png";
 
 export {
+  movieReview,
   charitylog,
   login,
   knot,
@@ -74,4 +80,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  spring,
+  vue,
+  java,
+  flutter,
 };
