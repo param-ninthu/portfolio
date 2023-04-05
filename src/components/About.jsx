@@ -40,11 +40,15 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am a driven individual seeking for an opportunity as a Software
-        Engineer where I can polish my skills. Well motivated, smart and
-        hardworking undergraduate exploring skills for the growth of the
-        organization as well. Much enough experience in the field of software
-        development looking forward to develop future career prospects.
+        Hello, I'm a software engineer with experience in full-stack
+        development. My focus is on delivering high-quality software that meets
+        the needs of users and drives business growth. I am committed to staying
+        up-to-date with the latest technologies and industry trends, and
+        continuously improving my skills. I believe that the best solutions come
+        from collaboration and teamwork, and I'm comfortable working with
+        designers, product managers, and other developers to achieve project
+        goals. Thank you for visiting my profile, please feel free to reach out
+        if you have any questions or potential project opportunities.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 ">
         {services.map((service, index) => (
