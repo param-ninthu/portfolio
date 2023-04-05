@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import linkedin from "./../assets/linkedin.png";
+import github from "./../assets/github-logo.png";
 
 import { SectionWrapper } from "../hoc";
 
@@ -50,7 +52,26 @@ const About = () => {
         goals. Thank you for visiting my profile, please feel free to reach out
         if you have any questions or potential project opportunities.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 ">
+      <motion.div
+        variants={fadeIn("", "", 0.8, 1)}
+        className=" mt-3 flex flex-wrap gap-10 "
+      >
+        <a
+          href="https://www.linkedin.com/in/ninthu-param/"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <img src={linkedin} alt="linkedin" className="w-8 h-8" />
+        </a>
+        <a
+          href="https://github.com/param-ninthu"
+          className="cursor-pointer"
+          target="_blank"
+        >
+          <img src={github} alt="github" className="w-8 h-8" />
+        </a>
+      </motion.div>
+      <div className="mt-10 flex flex-wrap gap-10 ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
