@@ -6,7 +6,6 @@ import {
 } from "./canvas";
 import Hero from "./Hero";
 import About from "./About";
-import Navbar from "./Navbar";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
@@ -25,5 +24,4 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
-  Navbar,
 };

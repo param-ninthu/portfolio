@@ -1,13 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import React from "react";
+import Navbar from "./components/Navbar";
 
 import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
-  Navbar,
   Tech,
   Works,
   StarsCanvas,
