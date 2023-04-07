@@ -14,7 +14,6 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 
 export {
-  Navbar,
   Hero,
   About,
   Tech,
@@ -26,4 +25,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Navbar,
 };
