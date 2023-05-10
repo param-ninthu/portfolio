@@ -42,9 +42,11 @@ import owmf from "./owmf.png";
 import login from "./login.png";
 import charitylog from "./charitylog.png";
 import movieReview from "./movieReview.png";
+import xms from "./xms.png";
 
 export {
   movieReview,
+  xms,
   charitylog,
   login,
   knot,

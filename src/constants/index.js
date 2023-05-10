@@ -28,6 +28,7 @@ import {
   vue,
   flutter,
   movieReview,
+  xms,
 } from "../assets";
 
 export const navLinks = [
@@ -118,7 +119,7 @@ const experiences = [
         color: "blue-text-gradient",
       },
       {
-        name: "spring boot",
+        name: "symfony",
         color: "blue-text-gradient",
       },
       {
@@ -197,6 +198,31 @@ const projects = [
     ],
     image: knot,
     source_code_link: "https://github.com/Knot-17",
+  },
+  {
+    name: "xms",
+    description:
+      "This project involves creating a React application that performs CRUD operations to manage expenses. The application utilizes state management effectively.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "purple-blue-text-gradient",
+      },
+      {
+        name: "oauth2",
+        color: "red-text-gradient",
+      },
+      {
+        name: "react styeled components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xms,
+    source_code_link: "https://github.com/param-ninthu/exms",
   },
   {
     name: "Click and Share",
