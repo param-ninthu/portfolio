@@ -1,4 +1,5 @@
 import {
+  firebase,
   mobile,
   backend,
   creator,
@@ -28,6 +29,7 @@ import {
   vue,
   flutter,
   movieReview,
+  xms,
 } from "../assets";
 
 export const navLinks = [
@@ -62,6 +64,10 @@ const services = [
 
 const technologies = [
   {
+    name: "Javascript",
+    icon: javascript,
+  },
+  {
     name: "Java",
     icon: java,
   },
@@ -69,17 +75,14 @@ const technologies = [
     name: "Flutter",
     icon: flutter,
   },
-  {
-    name: "Javascript",
-    icon: javascript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Vue JS",
-    icon: vue,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "Springboot",
@@ -87,8 +90,8 @@ const technologies = [
   },
 
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "MongoDB",
@@ -118,13 +121,14 @@ const experiences = [
         color: "blue-text-gradient",
       },
       {
-        name: "spring boot",
+        name: "symfony",
         color: "blue-text-gradient",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
+      { name: "rabbitmq", color: "pink-text-gradient" },
       {
         name: "restapi",
         color: "pink-text-gradient",
@@ -199,6 +203,31 @@ const projects = [
     source_code_link: "https://github.com/Knot-17",
   },
   {
+    name: "xms",
+    description:
+      "This project involves creating a React application that performs CRUD operations to manage expenses. The application utilizes state management effectively.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "purple-blue-text-gradient",
+      },
+      {
+        name: "oauth2",
+        color: "red-text-gradient",
+      },
+      {
+        name: "react styeled components",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xms,
+    source_code_link: "https://github.com/param-ninthu/exms",
+  },
+  {
     name: "Click and Share",
     description:
       "Allow charities to market their own products also they can request for donations from the users. The users can donate to the charities and also they can buy the products from the charities.",
@@ -220,7 +249,7 @@ const projects = [
     source_code_link: "https://github.com/param-ninthu/Charity",
   },
   {
-    name: "Movie Review (Learning)",
+    name: "Movie Review",
     description:
       "This is a learning project to learn the basics of springboot. This project is a movie review application where the user can see the details of the movie and can also review the movie.",
     tags: [

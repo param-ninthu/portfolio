@@ -24,6 +24,7 @@ import spring from "./tech/spring.png";
 import vue from "./tech/vue.png";
 import flutter from "./tech/flutter.png";
 import java from "./tech/java.png";
+import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -42,9 +43,11 @@ import owmf from "./owmf.png";
 import login from "./login.png";
 import charitylog from "./charitylog.png";
 import movieReview from "./movieReview.png";
+import xms from "./xms.png";
 
 export {
   movieReview,
+  xms,
   charitylog,
   login,
   knot,
@@ -84,4 +87,5 @@ export {
   vue,
   java,
   flutter,
+  firebase,
 };
