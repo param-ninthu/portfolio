@@ -1,4 +1,5 @@
 import {
+  firebase,
   mobile,
   backend,
   creator,
@@ -63,6 +64,10 @@ const services = [
 
 const technologies = [
   {
+    name: "Javascript",
+    icon: javascript,
+  },
+  {
     name: "Java",
     icon: java,
   },
@@ -70,17 +75,14 @@ const technologies = [
     name: "Flutter",
     icon: flutter,
   },
-  {
-    name: "Javascript",
-    icon: javascript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Vue JS",
-    icon: vue,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "Springboot",
@@ -88,8 +90,8 @@ const technologies = [
   },
 
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "MongoDB",
@@ -126,6 +128,7 @@ const experiences = [
         name: "mongodb",
         color: "green-text-gradient",
       },
+      { name: "rabbitmq", color: "pink-text-gradient" },
       {
         name: "restapi",
         color: "pink-text-gradient",
@@ -246,7 +249,7 @@ const projects = [
     source_code_link: "https://github.com/param-ninthu/Charity",
   },
   {
-    name: "Movie Review (Learning)",
+    name: "Movie Review",
     description:
       "This is a learning project to learn the basics of springboot. This project is a movie review application where the user can see the details of the movie and can also review the movie.",
     tags: [
