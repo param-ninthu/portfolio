@@ -23,6 +23,7 @@ import {
   owmf,
   charity,
   adminDash,
+  hologo,
   charitylog,
   spring,
   java,
@@ -109,7 +110,7 @@ const experiences = [
     company_name: "Effective Solutions",
     icon: effective,
     iconBg: "#383E56",
-    date: "November 2022 - Present",
+    date: "November 2022 - April 2023",
     points: [
       "Route Radar - Tracking management system",
       "Developing a mobile application for Fleet management.",
@@ -133,6 +134,30 @@ const experiences = [
         name: "restapi",
         color: "pink-text-gradient",
       },
+    ],
+  },
+
+  {
+    title: "Associate Software Engineer",
+    company_name: "Hologo World",
+    icon: hologo,
+    iconBg: "#383E56",
+    date: "July 2023 - Present",
+    points: [
+      "Taking part in the update of their iOS app.",
+      "Working on integration of snap camerakit.",
+      ,
+    ],
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c#",
+        color: "blue-text-gradient",
+      },
+      { name: "swift", color: "green-text-gradient" },
     ],
   },
 ];

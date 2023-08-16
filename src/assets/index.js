@@ -36,6 +36,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import effective from "./company/effective.ico";
+import hologo from "./company/hologo.png";
 import knot from "./Knot.png";
 import adminDash from "./adminDash.png";
 import charity from "./charity.png";
@@ -88,4 +89,5 @@ export {
   java,
   flutter,
   firebase,
+  hologo,
 };
