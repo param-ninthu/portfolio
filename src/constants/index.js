@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import {
   firebase,
   mobile,
@@ -31,6 +32,8 @@ import {
   flutter,
   movieReview,
   xms,
+  postgres,
+  universal,
 } from "../assets";
 
 export const navLinks = [
@@ -102,6 +105,7 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  { name: "PostgreSQL", icon: postgres },
 ];
 
 const experiences = [
@@ -144,9 +148,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2023 - Present",
     points: [
-      "Taking part in the update of their iOS app.",
-      "Working on integration of snap camerakit.",
-      ,
+      "  Worked on implementing the camera kit feature for the mobile app. Published the app to test flight and app store.",
+      "Worked on the Ad Management System in all aspects of the development cycle.",
+      "Engaged in chatbot development with OpenAI.",
+      "Hosted a new dashboard on the EC2 instance with a dedicated backend.",
+      "Worked on backend security aspects with JWT.",
     ],
     tags: [
       {
@@ -158,6 +164,18 @@ const experiences = [
         color: "blue-text-gradient",
       },
       { name: "swift", color: "green-text-gradient" },
+      {
+        name: "restapi",
+        color: "red-text-gradient",
+      },
+      {
+        name: "mern",
+        color: "purple-blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "red-text-gradient",
+      },
     ],
   },
 ];
@@ -190,6 +208,31 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Universal Carwash",
+    description:
+      "Universal Carwash is an online platform for the car detailing company where clients can schedule there booking.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "emailjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "html",
+        color: "blue-green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: universal,
+    source_code_link: "http://theuniversalcarwash.ch/",
+  },
   {
     name: "knot",
     description:
