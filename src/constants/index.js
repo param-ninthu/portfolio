@@ -146,13 +146,13 @@ const experiences = [
     company_name: "Hologo World",
     icon: hologo,
     iconBg: "#383E56",
-    date: "July 2023 - Present",
+    date: "July 2023 - July 2024",
     points: [
-      "  Worked on implementing the camera kit feature for the mobile app. Published the app to test flight and app store.",
-      "Worked on the Ad Management System in all aspects of the development cycle.",
-      "Engaged in chatbot development with OpenAI.",
-      "Hosted a new dashboard on the EC2 instance with a dedicated backend.",
-      "Worked on backend security aspects with JWT.",
+      "Developed and integrated the Camera Kit feature into a mobile application, successfully publishing the app on TestFlight and the App Store.",
+      "Led the full development cycle of an Ad Management System, including design, implementation, and testing across multiple stages.",
+      "Collaborated in the design and deployment of a chatbot leveraging OpenAI technology, enhancing user engagement and automation capabilities.",
+      "Deployed a new dashboard on an EC2 instance, ensuring smooth integration with a dedicated backend and optimizing for performance.",
+      "Strengthened backend security by implementing JWT (JSON Web Token) authentication, enhancing data protection and secure communication.",
     ],
     tags: [
       {
@@ -174,6 +174,35 @@ const experiences = [
       },
       {
         name: "aws",
+        color: "red-text-gradient",
+      },
+    ],
+  },
+  {
+    title: "Engineering - Solutions Architect",
+    company_name: "Hologo World",
+    icon: hologo,
+    iconBg: "#383E56",
+    date: "July 2024 - Present",
+    points: [
+      "Deployed a newly developed multiple websites on the aws",
+      "Collaborated in the fine tuning of Claude 3 Sonnet model using AWS Bedrock",
+    ],
+    tags: [
+      {
+        name: "restapi",
+        color: "red-text-gradient",
+      },
+      {
+        name: "mern",
+        color: "purple-blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "red-text-gradient",
+      },
+      {
+        name: "awsbedrock",
         color: "red-text-gradient",
       },
     ],
