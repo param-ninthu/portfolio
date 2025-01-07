@@ -34,6 +34,8 @@ import {
   xms,
   postgres,
   universal,
+  devops,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -52,6 +54,10 @@ export const navLinks = [
 ];
 
 const services = [
+  {
+    title: "DevOps Engineer",
+    icon: devops,
+  },
   {
     title: "Frontend Developer",
     icon: web,
@@ -102,6 +108,10 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "AWS",
+    icon: aws,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -148,11 +158,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2023 - July 2024",
     points: [
-      "Developed and integrated the Camera Kit feature into a mobile application, successfully publishing the app on TestFlight and the App Store.",
-      "Led the full development cycle of an Ad Management System, including design, implementation, and testing across multiple stages.",
-      "Collaborated in the design and deployment of a chatbot leveraging OpenAI technology, enhancing user engagement and automation capabilities.",
-      "Deployed a new dashboard on an EC2 instance, ensuring smooth integration with a dedicated backend and optimizing for performance.",
-      "Strengthened backend security by implementing JWT (JSON Web Token) authentication, enhancing data protection and secure communication.",
+      "Integrated CameraKit features for mobile apps and published to TestFlight and App Store.",
+      "Developed a chatbot using OpenAI APIs.",
+      "Hosted a new dashboard with a dedicated backend on an EC2 instance.",
+      "Enhanced backend security using JWT authentication.",
     ],
     tags: [
       {
@@ -185,8 +194,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2024 - Present",
     points: [
-      "Deployed a newly developed multiple websites on the aws",
-      "Collaborated in the fine tuning of Claude 3 Sonnet model using AWS Bedrock",
+      "Deployed newly developed multiple websites on the AWS.",
+      " Implemented Elastic Search and Sentry to enhance product performance and monitoring.",
+      " Established CI/CD pipelines using GitHub Actions ",
+     " Maintained AWS EC2 instances and ensured optimal server performance.",
+      "Collaborated using Git version control and team management."
     ],
     tags: [
       {
@@ -202,8 +214,16 @@ const experiences = [
         color: "red-text-gradient",
       },
       {
-        name: "awsbedrock",
+        name: "ec2",
         color: "red-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "purple-blue-text-gradient",
       },
     ],
   },

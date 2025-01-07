@@ -47,6 +47,8 @@ import charitylog from "./charitylog.png";
 import movieReview from "./movieReview.png";
 import xms from "./xms.png";
 import universal from "./universal.png";
+import aws from "./aws.png";
+import devops from "./devops.png";
 
 export {
   movieReview,
@@ -93,5 +95,7 @@ export {
   firebase,
   hologo,
   postgres,
-  universal
+  universal,
+  aws,
+  devops
 };
