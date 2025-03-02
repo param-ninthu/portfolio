@@ -278,6 +278,10 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "firebase",
+        color: "blue-green-text-gradient",
+      },
     ],
     image: universal,
     source_code_link: "http://theuniversalcarwash.ch/",
@@ -337,7 +341,7 @@ const projects = [
         color: "red-text-gradient",
       },
       {
-        name: "react styeled components",
+        name: "react styled components",
         color: "pink-text-gradient",
       },
     ],
